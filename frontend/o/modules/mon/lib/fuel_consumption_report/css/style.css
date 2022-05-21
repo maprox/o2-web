@@ -1,0 +1,6 @@
+.mon_fuel_consumption_report {background-image:url('%static%/img/3160/chart.png')}
+
+.vehicle-itemlist .x-column-header-inner,
+.vehicle-itemlist .x-column-header-inner span {
+	white-space:normal !important;
+}

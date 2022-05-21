@@ -1,0 +1,159 @@
+.status_move {color:#090}
+.status_stay {color:#00c}
+.status_parking {color:#000}
+.status_disconnected {color:#c00}
+
+.device-infopanel {
+	padding: 10px;
+}
+
+table.device-infotable {
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+
+.device-commandspanel {
+	padding: 10px;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+
+.template-list-item {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	padding: 3px;
+}
+
+.template-list-item strong {
+	font-weight: bold;
+}
+
+.template-name {
+	font-weight: bold;
+}
+
+table.device-infotable td {
+	padding: 6px;
+}
+
+table.device-infotable td:even {
+	background-color: red;
+}
+
+table.device-infotable td.title {
+	width: 80px;
+	color: #444;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 70%;
+}
+
+table.device-infotable td.value {
+	padding-right: 0px;
+}
+
+table.device-infotable td .nodata {
+	font-size: 70%;
+	color: #888;
+}
+
+.last-image {
+	cursor: pointer;
+}
+
+.last-image-description {
+	line-height: 20px;
+	margin-bottom: -20px;
+	z-index: 10000;
+	position: absolute;
+	font-size: 10px;
+	color: white;
+	padding: 0 4px;
+	background: black;
+}
+
+.last-image img {
+	border: 1px solid black;
+	display: block;
+}
+
+/* Photo viewer */
+
+@font-face {
+	font-family: 'clock';
+	src: url("%static%/fonts/clock/clock.eot?12817753");
+	src: url("%static%/fonts/clock/clock.eot?12817753#iefix")
+		format('embedded-opentype'),
+		url("%static%/fonts/clock/clock.woff?12817753") format('woff'),
+		url("%static%/fonts/clock/clock.ttf?12817753") format('truetype'),
+		url("%static%/fonts/clock/clock.svg?12817753#clock") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Hide indicator */
+.photo-viewer-carousel .x-carousel-indicator {
+	display: none;
+}
+
+.photo-viewer-panel {
+	background: #000;
+	z-index: 50000;
+}
+
+.photo-viewer-panel::before {
+	font-family: 'clock';
+	content: '\23f3';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	font-size: 50px;
+	top: 50%;
+	left: 50%;
+	margin-top: -20px;
+	margin-left: -20px;
+	color: #666666;
+}
+
+.photo-viewer-done-button, .photo-viewer-done-button.x-button-pressing {
+	cursor: pointer;
+	border: 1px solid #b3b3b3;
+	background-color: rgba(0,0,0,0.3);
+	background-image: none;
+	border-radius: 4px;
+	color: #b3b3b3;
+	font-weight: bold;
+	font-size: .8em;
+	padding: .4em .8em;
+}
+
+.photo-viewer-image {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+ }
+
+/*
+------------------------------------
+           SIGNAL
+------------------------------------
+*/
+
+.signal-container,
+.signal-meter
+{
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.signal-container
+{background: url('%static%/img/gps_signal/red.png') !important;}
+
+.signal-meter
+{
+	background: url('%static%/img/gps_signal/green.png') !important;
+	overflow: hidden;
+}

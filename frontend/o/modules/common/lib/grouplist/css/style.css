@@ -1,0 +1,49 @@
+.row_groupall .x-grid-cell-inner {
+	font-weight: bold !important;
+}
+.row_groupselected {
+	color: green;
+}
+.row_groupsearchresults {
+	color: blue;
+}
+
+.row_groupsearchresults .x-grid-checkheader {
+	background: none;
+}
+
+.row_groupreal_0 td {
+	
+}
+
+.groupslist .x-grid-row * {
+	cursor: pointer !important;
+}
+
+/*.groupslist .x-grid-row-selected td.x-grid-cell {
+	border: none !important;
+}*/
+
+/*.groupslist .x-grid-row-focused .x-grid-td {
+	border-top: none !important;
+	border-bottom: none !important;
+}*/
+
+.check-all {
+	background-image:url('%static%/img/checked.gif');
+}
+.check-none {
+	background-image:url('%static%/img/unchecked.gif');
+}
+
+.g-show-disabled {
+	background-image:url('%static%/img/show_disabled.png');
+}
+
+.inactive {
+	color: gray;
+}
+
+.group-list-italic div {
+	font-style: italic;
+}

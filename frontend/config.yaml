@@ -1,0 +1,119 @@
+#
+# YAML
+#
+# Frontend settings
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Modules path
+#
+path:
+  modules:
+    current: {{application}}/modules
+    c: c
+    o: o/modules
+    m: m/modules
+
+#
+# Module's aliases
+#
+aliases:
+# ______________________________________________________
+# Common modules
+#
+  act_settings: common/act/setting
+  act_billing: common/act/billing
+  act_events: common/act/events
+  act_reports: common/act/report
+  act_msg: common/act/msg
+  common_accesseditor: common/act/access
+
+# ______________________________________________________
+# Firm administrator modules
+#
+  act_users: x/act/user
+  act_firms: dn/act/firmseditor
+
+# ______________________________________________________
+# "Transport monitoring" package modules
+#
+  act_map: mon/act/map
+  act_trackhistory: mon/act/trackhistory
+  act_devices: mon/act/device
+  x_group_mon_device: x/act/group_mon_device
+  x_group_mon_geofence: x/act/group_mon_geofence
+  act_notifications: common/act/notificationseditor
+  mon_area: mon/act/area
+  mon_condition: mon/act/condition
+  mon_point: mon/act/point
+  mon_vehicle: mon/act/vehicle
+  mon_waylist: mon/act/waylist
+  mon_fuel_consumption_report: mon/act/fuel_consumption_report
+  mon_sim_card: mon/act/sim_card
+  x_company: x/act/company
+  x_notification: x/act/notification
+
+# ______________________________________________________
+# "Product supply" package modules
+#
+  act_dn_offer: dn/act/offer
+  act_dn_warehouse: dn/act/warehouse
+  act_product_list: dn/act/product_list
+  dn_analytics: dn/act/analytics
+
+# ______________________________________________________
+# "Catering" package modules
+#
+  act_dn_supplier: dn/act/supplier
+  act_dn_cabinet: dn/act/cabinet
+  act_dn_pricerequest: dn/act/pricerequest
+  act_dn_priceresponse: dn/act/priceresponse
+
+# ______________________________________________________
+# Developer modules
+#
+  act_objects: common/act/dbeditor
+
+# ______________________________________________________
+# Administration modules
+#
+  act_tariffs: common/act/tariffseditor
+  act_packages: common/act/packageseditor
+
+# ______________________________________________________
+# Docsnet modules
+#
+  dn_workers: dn/act/worker
+  dn_worker_post: dn/act/worker_post
+
+# ---------------------------------------------------------------------------
+#
+# Module's aliases
+#
+packages:
+#
+# Monitoring
+#
+  mon:
+    - act_map
+    - act_msg
+    - act_trackhistory
+    - act_events
+    - act_reports
+
+#
+# Catering
+#
+  catering:
+    - act_dn_offer
+
+#
+# Supplier
+#
+  supplier:
+    - act_dn_cabinet
+    - act_dn_supplier
+    - act_dn_offer

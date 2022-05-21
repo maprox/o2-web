@@ -1,0 +1,77 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - /ext/ux/form/field/iconcombo.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - common/lib/passgen
+  - obj/settings
+  - obj/props
+  - mon/obj/device
+  - x/obj/lang
+  - x/obj/notification_importance
+  - x/obj/notice
+  - x/obj/notification_setting
+  - x/obj/notification_setting_type
+  - obj/settings
+  - common/lib/themecombo
+  - common/lib/formerrors
+  - common/lib/companyrequisites
+  - common/lib/simplegrid
+  - c > lib/vtype/paymentaccount
+  - n/obj/work
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/model/model-language.js
+  - js/model/model-utc.js
+  - js/model/store-labelpositions.js
+  - js/model/store-eventsperiods.js
+  - js/model/store-language.js
+  - js/model/store-utc.js
+  - js/notification/model.js
+  - js/settingspanel.js
+  - js/settingsgrid.js
+  - js/firm/base.js
+  - js/firm/override.js
+  - js/personal/base.js
+  - js/auth/base.js
+  - js/map/base.js
+  - js/welcome/base.js
+  - js/notice/base.js
+  - js/notification/base.js
+  - js/panel.js
+  - js/module.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

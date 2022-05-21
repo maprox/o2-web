@@ -1,0 +1,7 @@
+.icon-warning {
+	background-image: url("%static%/img/warning.png");
+}
+
+.errors-list {
+	padding-right: 30px;
+}

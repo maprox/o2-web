@@ -1,0 +1,78 @@
+#
+# YAML
+#
+# Module configuration
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# List of JS files used in module
+# / Relative to root folder of JS files
+#
+include:
+  - ext/ux/grid/plugin/editing.js
+  - ext/ux/grid/column/interval.js
+  - ext/ux/form/field/datetime.js
+  - ext/ux/form/field/interval.js
+
+#
+# List of modules, wich are used in this module
+# / Here are listed the names of modules
+#
+modules:
+  - mon/lib/map
+  - mon/lib/map/engines/openlayers
+  - common/lib/modelslist
+  - common/lib/datetime
+  - dn/obj/worker
+  - x/obj/company
+  - x/obj/history
+  - mon/obj/vehicle
+  - mon/obj/fuel
+  - mon/obj/geofence
+  - mon/obj/waylist
+  - mon/obj/waylist_route
+  - mon/obj/waylist_route_update
+  - mon/obj/geofence_presence
+
+#
+# List of JS files, included in this module
+# / Relative to the folder that contains this configuration file
+#
+js:
+  - js/model/series-model.js
+  - js/model/series-store.js
+  - js/view/route/list.js
+  - js/view/route/fact.js
+  - js/view/route/map.js
+  - js/view/editorwindow.js
+  - js/view/tabs/props.js
+  - js/view/tabs/route.js
+  - js/view/tabs/history.js
+  - js/view/panel.js
+  - js/view/baselayer.js
+  - js/control/route/list.js
+  - js/control/route/fact.js
+  - js/control/route/map.js
+  - js/control/tabs/props.js
+  - js/control/tabs/route.js
+  - js/control/tabs/history.js
+  - js/control/panel.js
+  - js/control/editorwindow.js
+
+#
+# List of CSS files, wich are plugged in this module
+# / Relative to the folder that contains this configuration file
+#
+css:
+  - css/style.css
+
+#
+# The path to language files
+# / {language} is replaced by the alias (ru, en, de и т.д.)
+# / Relative to the folder that contains this configuration file
+#
+lang:
+  - lang/{{language}}.js

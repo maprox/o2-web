@@ -1,0 +1,33 @@
+new Ext.data.Store({
+	storeId: 'store-utc',
+	model: 'Utc',
+	data: [
+		{utcid: 66, utcname: 'UTC-12', utcvalue: '-12 hour'},
+		{utcid: 67, utcname: 'UTC-11', utcvalue: '-11 hour'},
+		{utcid: 68, utcname: 'UTC-10', utcvalue: '-10 hour'},
+		{utcid: 69, utcname: 'UTC-9', utcvalue: '-9 hour'},
+		{utcid: 70, utcname: 'UTC-8', utcvalue: '-8 hour'},
+		{utcid: 71, utcname: 'UTC-7', utcvalue: '-7 hour'},
+		{utcid: 72, utcname: 'UTC-6', utcvalue: '-6 hour'},
+		{utcid: 73, utcname: 'UTC-5', utcvalue: '-5 hour'},
+		{utcid: 74, utcname: 'UTC-4', utcvalue: '-4 hour'},
+		{utcid: 75, utcname: 'UTC-3', utcvalue: '-3 hour'},
+		{utcid: 76, utcname: 'UTC-2', utcvalue: '-2 hour'},
+		{utcid: 77, utcname: 'UTC-1', utcvalue: '-1 hour'},
+		{utcid: 78, utcname: 'UTC+0', utcvalue: '0 hour'},
+		{utcid: 79, utcname: 'UTC+1', utcvalue: '1 hour'},
+		{utcid: 80, utcname: 'UTC+2', utcvalue: '2 hour'},
+		{utcid: 81, utcname: 'UTC+3', utcvalue: '3 hour'},
+		{utcid: 82, utcname: 'UTC+4', utcvalue: '4 hour'},
+		{utcid: 83, utcname: 'UTC+5', utcvalue: '5 hour'},
+		{utcid: 84, utcname: 'UTC+6', utcvalue: '6 hour'},
+		{utcid: 85, utcname: 'UTC+7', utcvalue: '7 hour'},
+		{utcid: 86, utcname: 'UTC+8', utcvalue: '8 hour'},
+		{utcid: 87, utcname: 'UTC+9', utcvalue: '9 hour'},
+		{utcid: 88, utcname: 'UTC+10', utcvalue: '10 hour'},
+		{utcid: 89, utcname: 'UTC+11', utcvalue: '11 hour'},
+		{utcid: 90, utcname: 'UTC+12', utcvalue: '12 hour'},
+		{utcid: 91, utcname: 'UTC+13', utcvalue: '13 hour'},
+		{utcid: 92, utcname: 'UTC+14', utcvalue: '14 hour'}
+	]
+});

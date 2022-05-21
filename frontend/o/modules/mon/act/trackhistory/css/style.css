@@ -1,0 +1,240 @@
+.showstoppings
+{background-image:url('%static%/img/3160-shadowles/ui-radio-button-uncheck.png')}
+
+.hideall
+{background-image:url('%static%/img/3160/broom.png')}
+
+.hidefulltrack
+{background-image:url('%static%/img/3160/layer-shape-curve.png')}
+
+.trackhistory
+{background-image:url('%static%/img/trackhistory.png')}
+
+.tt_sleep td:first-child div {
+	margin-left: 4px;
+}
+
+.tt_sleep,
+.tt_moving,
+.tt_moving td:first-child {
+	border-left: 4px solid;
+}
+
+.tt_sleep,
+.tt_sleep td:first-child {
+	border-left: none;
+	margin-left: 3px;
+}
+
+.tt_nodata,
+.tt_nodata td:first-child {
+	border-left: none;
+}
+
+.tc_6699ff,
+.tc_6699ff td:first-child {
+	border-left-color: #6699ff;
+}
+
+.tc_00ff00,
+.tc_00ff00 td:first-child {
+	border-left-color: #00ff00;
+}
+
+.tc_ff0000,
+.tc_ff0000 td:first-child {
+	border-left-color: #ff0000;
+}
+
+.tc_0000ff,
+.tc_0000ff td:first-child {
+	border-left-color: #0000ff;
+}
+
+.tc_ffff00,
+.tc_ffff00 td:first-child {
+	border-left-color: #ffff00;
+}
+
+.tc_00ffff,
+.tc_00ffff td:first-child {
+	border-left-color: #00ffff;
+}
+
+.tc_ff00ff,
+.tc_ff00ff td:first-child {
+	border-left-color: #ff00ff;
+}
+
+.tc_c0c0c0,
+.tc_c0c0c0 td:first-child {
+	border-left-color: #c0c0c0;
+}
+
+.tc_cc0066,
+.tc_cc0066 td:first-child {
+	border-left-color: #cc0066;
+}
+
+.tc_999999,
+.tc_999999 td:first-child {
+	border-left-color: #999999;
+}
+
+.tc_6699ff,
+.tc_6699ff td:first-child {
+	border-left-color: #6699ff;
+}
+
+.tc_ff33ff,
+.tc_ff33ff td:first-child {
+	border-left-color: #ff33ff;
+}
+
+.tc_ff6600,
+.tc_ff6600 td:first-child {
+	border-left-color: #ff6600;
+}
+
+.tc_666600,
+.tc_666600 td:first-child {
+	border-left-color: #666600;
+}
+
+.tc_a52a2a,
+.tc_a52a2a td:first-child {
+	border-left-color: #a52a2a;
+}
+
+.tc_008800,
+.tc_008800 td:first-child {
+	border-left-color: #008800;
+}
+
+.detailsGridRow {
+	padding-top: 4px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.track-sleep .detailsGridRow {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.detailedreport .x-grid-rowbody {
+	padding: 0px;
+}
+
+.olPopup span.left {
+	display: inline !important;
+	background-color: transparent !important;
+	float: left;
+}
+
+.olPopup img.slide {
+	float: right;
+	margin-left: 10px;
+}
+
+.olPopup div.stopping_details {
+	display: none;
+	background-image: none !important;
+	margin-top: 5px;
+}
+
+.olPopup div.line {
+	white-space: nowrap;
+	background-image: none !important;
+}
+
+.olPopup div.line span {
+	display: inline !important;
+	background-color: transparent !important;
+}
+
+.olPopup div.line span.spacer {
+	margin: 0 10px;
+}
+
+.x-grid-rowbody-tr.track-nodata .detailsGridRow {
+	color: #999999;
+}
+
+.x-grid-row.track-no-checkbox .x-grid-checkheader {
+	display: none;
+}
+
+.stopping {
+	cursor: pointer;
+}
+
+.daysummaryrow {
+	padding: 10px 0px;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.summarytitle {
+	margin-bottom: 6px;
+}
+
+.detailedreport .x-grid-row-summary {
+	background: #e5e5ef;
+}
+
+.x-grid-group-collapsed + .x-grid-row-summary {
+	display: none;
+}
+
+div.totaldetails {
+	padding: 10px;
+	background: #eee;
+	border-top: 2px solid #DDD !important;
+	font-size: 90%;
+}
+
+button .gpx10,
+.x-menu-item-icon.gpx10,
+button .gpx11,
+.x-menu-item-icon.gpx11
+{background-image:url('%static%/img/3160/document-attribute-g.png')}
+
+button .kml,
+.x-menu-item-icon.kml
+{background-image:url('%static%/img/3160/document-attribute-k.png')}
+.sensors-notice-panel {
+	background: #eeeeee;
+	color: #555555;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 90%;
+}
+
+.btn-play
+{background-image:url('%static%/img/3160/control.png')}
+
+.btn-pause
+{background-image:url('%static%/img/3160/control-pause.png')}
+
+.btn-forward
+{background-image:url('%static%/img/3160/control-double.png')}
+
+.btn-backward
+{background-image:url('%static%/img/3160/control-double-180.png')}
+
+.btn-stop
+{background-image:url('%static%/img/3160/control-stop-square.png')}
+.btn-to-end
+{background-image:url('%static%/img/3160/control-double.png')}
+.btn-to-start
+{background-image:url('%static%/img/3160/control-double-180.png')}
+
+.btn-skip-stoppings {
+	background-image:url('%static%/img/3160/clock--arrow.png')
+}
+.btn-follow-selected {
+	background-image:url('%static%/img/3160/magnet-blue.png')
+}

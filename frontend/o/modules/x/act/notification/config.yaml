@@ -1,0 +1,112 @@
+#
+# YAML
+#
+# Configuration
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# List of JS files used in module
+# / Relative to root folder of JS files
+#
+include:
+  - ext/ux/form/field/numberinterval.js
+#
+# List of modules, wich are used in this module
+# / Here are listed the names of modules
+#
+modules:
+  - common/lib/simplelist
+  - common/lib/schedule
+  - common/lib/modelslist
+  - x/obj/notification
+  - x/obj/notification_type
+  - x/obj/notification_importance
+  - x/obj/notification_message
+  - x/obj/notification_setting_type
+  - x/obj/user
+  - ui/groups/devices
+  - ui/groups/zones
+
+#
+# List of JS files, included in this module
+# / Relative to the folder that contains this configuration file
+#
+js:
+#  - js/model/message.js
+  - js/view/panel/abstract_action.js
+  - js/view/panel/action_1.js
+  - js/view/panel/action_0.js
+
+  - js/model/store-alias.js
+  - js/model/url.js
+  - js/model/url_param.js
+  - js/view/tab/props.js
+  - js/view/tab/params.js
+  - js/view/tab/actions.js
+  - js/view/param/abstract.js
+  - js/view/param/abstract_groupslist.js
+  - js/view/param/mon_speed.js
+  - js/view/param/mon_device.js
+  - js/view/param/mon_geofence.js
+  - js/view/param/mon_geofence_restrictions.js
+  - js/view/param/mon_speed_restrictions.js
+  - js/view/param/mon_connection_loss_restrictions.js
+  - js/view/action/abstract.js
+  - js/view/action/abstract_list.js
+  - js/view/action/email.js
+  - js/view/action/sms.js
+  - js/view/action/telegram.js
+
+  - js/view/action/abstract_grid.js
+  - js/view/action/user.js
+  - js/view/action/groupadd.js
+  - js/view/action/groupremove.js
+  - js/view/action/url.js
+  - js/control/action/url.js
+  - js/view/panel.js
+  - js/view/tabs.js
+
+#  - js/control/panel/abstract_action.js
+#  - js/control/panel/action_1.js
+#  - js/control/panel/action_0.js
+
+  - js/control/tab/props.js
+  - js/control/tab/params.js
+  - js/control/tab/actions.js
+  - js/control/param/abstract.js
+  - js/control/param/abstract_groupslist.js
+  - js/control/param/mon_speed.js
+  - js/control/param/mon_device.js
+  - js/control/param/mon_geofence.js
+  - js/control/param/mon_geofence_restrictions.js
+  - js/control/param/mon_speed_restrictions.js
+  - js/control/param/mon_connection_loss_restrictions.js
+  - js/control/action/abstract.js
+  - js/control/action/abstract_list.js
+  - js/control/action/email.js
+  - js/control/action/sms.js
+
+
+
+#  - js/control/action/user.js
+  - js/control/action/abstract_grid.js
+  - js/control/tabs.js
+  - js/module.js
+
+#
+# List of CSS files, wich are plugged in this module
+# / Relative to the folder that contains this configuration file
+#
+css:
+  - css/style.css
+
+#
+# The path to language files
+# / {language} is replaced by the alias (ru, en, de и т.д.)
+# / Relative to the folder that contains this configuration file
+#
+lang:
+  - lang/{{language}}.js

@@ -1,0 +1,11 @@
+.track_period {
+	float: right;
+}
+
+.track_color {
+	font-size: 150%;
+}
+
+.x-list-item:not(.x-item-selected) .track_stopping {
+	color: #888888;
+}

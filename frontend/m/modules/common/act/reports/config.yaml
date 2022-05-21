@@ -1,0 +1,43 @@
+#
+# YAML
+#
+# Map module configuration
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# List of JS files used in module
+# / Relative to root folder of JS files
+#
+include:
+
+# 
+# List of modules, wich are used in this module
+# / Here are listed the names of modules
+#
+modules:
+#  - common/lib/periodchooser
+
+#
+# List of JS files, included in this module
+# / Relative to the folder that contains this configuration file
+#
+js:
+#  - js/view/reports.js
+#  - js/control/module.js
+#  - js/control/reports.js
+
+#
+# List of CSS files, wich are plugged in this module
+# / Relative to the folder that contains this configuration file
+#
+css:
+
+#
+# The path to language files
+# / {language} is replaced by the alias (ru, en, de и т.д.)
+# / Relative to the folder that contains this configuration file
+#
+lang:

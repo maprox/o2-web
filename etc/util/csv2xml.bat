@@ -1,0 +1,1 @@
+php csv2xml.php x_notification input.csv > result.xml

@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+    DocumentRoot /opt/maprox/web.observer/public/
+    ServerName ${HOST_NAME}
+
+    LimitRequestLine 32760
+    ErrorLog ${APACHE_LOG_DIR}/observer_error.log
+    CustomLog ${APACHE_LOG_DIR}/observer_access.log combined
+
+    <Directory "/opt/maprox/web.observer/public/">
+        AllowOverride All
+        Require all granted
+        Options +Indexes
+    </Directory>
+
+    <IfModule remoteip_module>
+        RemoteIPHeader X-Forwarded-For
+    </IfModule>
+</VirtualHost>

@@ -1,0 +1,59 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# @author     sunsay <box@sunsay.ru>
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - /o/kernel/proxy/period.js
+  - o/utils/convert.js
+  - o/lang/{{language}}/eventtemplates.js
+  - ext/ux/window/imagewindow.js
+  - ext/ux/layout/center.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - mon/obj/device_image
+  - common/lib/events
+  - common/lib/timeperiod
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/model/eventstore.js
+  - js/view/events.js
+  - js/control/events.js
+  - js/model/packetprop.js
+  - js/view/packetinfo.js
+  - js/control/packetinfo.js
+  - js/view/coordswindow.js
+  - js/control/coordswindow.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

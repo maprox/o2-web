@@ -1,0 +1,49 @@
+#
+# YAML
+#
+# Desktop configuration
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# List of JS files used in module
+# / Relative to root folder of JS files
+#
+include:
+  - ext/ux/jsonp.js
+
+#
+# List of modules, wich are used in this module
+# / Here are listed the names of modules
+#
+modules:
+  - c > lib/map/engines/openlayers
+  - lib/map
+
+#
+# List of JS files, included in this module
+# / Relative to the folder that contains this configuration file
+#
+js:
+  - js/view/layerlist.js
+  - js/control/engine.js
+  - js/extensions/touchzoomin.js
+  - js/extensions/touchzoomout.js
+  - js/extensions/touchzoompanel.js
+
+#
+# List of CSS files, wich are plugged in this module
+# / Relative to the folder that contains this configuration file
+#
+css:
+  - css/style.css
+
+#
+# The path to language files
+# / {language} is replaced by the alias (ru, en, de и т.д.)
+# / Relative to the folder that contains this configuration file
+#
+lang:
+  - lang/{{language}}.js

@@ -1,0 +1,75 @@
+/**
+ * Style for template
+ */
+
+.mon-device
+{background-image:url('%static%/img/drive.png')}
+
+.deviceseditor_reset
+{background-image:url('%static%/img/arrow_undo.png')}
+
+.deviceseditor_add
+{background-image:url('%static%/img/1000/add.png')}
+
+.deviceseditor_copy
+{background-image:url('%static%/img/action_copy.png')}
+
+.deviceseditor_recyclebin
+{background-image:url('%static%/img/bin.png')}
+
+.deviceseditor_off
+{background-image:url('%static%/img/bullet_red.png')}
+
+.deviceseditor_on
+{background-image:url('%static%/img/bullet_green.png')}
+
+.devicestabsensors_add
+{background-image:url('%static%/img/1000/add.png')}
+
+.devicestabsensors_remove
+{background-image:url('%static%/img/action_delete.png')}
+
+.devicestabsensors_conversions
+{background-image:url('%static%/img/1000/chart_curve.png')}
+
+.deviceswindowconversion_add
+{background-image:url('%static%/img/1000/add.png')}
+
+.deviceswindowconversion_remove
+{background-image:url('%static%/img/action_delete.png')}
+
+.deviceswindowconversion_close
+{background-image:url('%static%/img/1000/accept.png')}
+
+.devicestabfields_add
+{background-image:url('%static%/img/1000/add.png')}
+
+.devicestabfields_remove
+{background-image:url('%static%/img/action_delete.png')}
+
+.deviceswindowconversion_check
+{background-image:url('%static%/img/1000/arrow_rotate_anticlockwise.png')}
+
+.deviceswindowconversion_smoothing
+{background-image:url('%static%/img/1000/chart_curve_add.png')}
+
+.devicestabimages_no {
+	line-height:44px;
+}
+
+.thumb-wrap {
+	float:left;
+	margin:0;
+	padding:5px;
+}
+
+.x-item-selected {
+	background:#eff5fb;
+	border:1px solid #99bbe8;
+	padding:4px;
+}
+
+/* IE fix for device images */
+.x-fieldset-body table {
+	width: 100%;
+}

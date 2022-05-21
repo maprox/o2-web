@@ -1,0 +1,23 @@
+.row_groupemptyzone td,
+.row_groupnotemptyzone td
+{
+	color: #33a;
+}
+
+.row_groupgeofencetype td
+{
+	color: #a33;
+}
+
+.row_groupgeofencetype .x-grid-checkheader,
+.row_groupemptyzone .x-grid-checkheader,
+.row_groupnotemptyzone .x-grid-checkheader
+{
+	background: none;
+}
+
+.groupslist_objects_mon_geofence .x-grid-row-selected .x-grid-cell,
+.groupslist_objects_mon_geofence .x-grid-row-focused .x-grid-cell {
+	border-color: #ddd !important;
+	background-color: inherit !important;
+}

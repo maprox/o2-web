@@ -1,0 +1,8 @@
+.field_search input
+{
+	background: #fff url('%static%/img/search.gif') 6px 50% no-repeat;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	padding-left: 20px;
+}

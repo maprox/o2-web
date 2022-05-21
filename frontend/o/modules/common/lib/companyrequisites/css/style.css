@@ -1,0 +1,15 @@
+/* 
+    Document   : style
+    Created on : 15.11.2011, 13:45:34
+    Author     : sunsay
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.autowidth {width: auto !important;}
+
+a.must_feel,
+a.must_feel:hover
+{
+	color: #c00;
+}

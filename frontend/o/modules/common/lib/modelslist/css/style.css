@@ -1,0 +1,83 @@
+.modelseditor
+{background-image:url('%static%/img/drive.png')}
+
+.modelseditor_reset
+{background-image:url('%static%/img/arrow_undo.png')}
+
+.modelseditor_edit
+{background-image:url('%static%/img/3160/pencil-small.png')}
+
+.modelseditor_copy
+{background-image:url('%static%/img/action_copy.png')}
+
+.modelseditor_off
+{background-image:url('%static%/img/bullet_red.png')}
+
+.modelseditor_on
+{background-image:url('%static%/img/bullet_green.png')}
+
+.modelseditor_props
+{background-image:url('%static%/img/bullet_wrench.png')}
+
+.modelseditor_images
+{background-image:url('%static%/img/image.png')}
+
+.modelseditor_sensors
+{background-image:url('%static%/img/1000/contrast.png')}
+
+.modelseditor_groups
+{background-image:url('%static%/img/groups.png')}
+
+.modelseditor_fields
+{background-image:url('%static%/img/info.png')}
+
+.thumb-wrap {
+	float:left;
+	margin:0;
+	padding:5px;
+}
+
+.x-item-selected {
+	background:#eff5fb;
+	border:1px solid #99bbe8;
+	padding:4px;
+}
+
+.is_disabled {
+	color:#bbb;
+}
+
+.is_trashed {
+	color:#8e4747;
+}
+
+.readonly .x-grid-cell-first {
+	border-left: 4px solid #35a;
+}
+
+.foreign .x-grid-cell-first {
+	border-left: 4px solid #34d894;
+}
+
+.readonly.foreign .x-grid-cell-first {
+	border-left: 4px solid #00b1dd;
+}
+
+.readonly-message {
+	padding: 10px 10px 10px 40px;
+	/*font-size: 120%;*/
+	font-weight: bold;
+	background: url('%static%/img/icons-32/information.png') no-repeat left;
+}
+
+.modelseditor_fieldsearch input {
+	background: #fff url('%static%/img/search.gif') 6px 50% no-repeat;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	padding-left: 20px;
+}
+
+.modelseditor_showdeleted {
+	background-image: url('%static%/img/bin.png');
+}

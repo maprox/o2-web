@@ -1,0 +1,92 @@
+.reports {background-image:url('%static%/img/report.png')}
+
+.generate {background-image:url('%static%/img/docsnet/arrow-forward-next.png')}
+
+.c-view .item{
+	padding: 4px;
+	margin: 1px;
+}
+
+.c-view .x-item-over{
+	border: 1px solid #dddddd;
+	background: #efefef url('%static%/ext/themes/images/default/grid/row-over.gif') repeat-x left top;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.c-view .x-item-selected{
+	background: #DFEDFF;
+	border: 1px solid #6593cf;
+	padding: 3px;
+}
+
+.c-view .x-item-selected span{
+	color:#1A4D8F;
+}
+
+.c-panel .details{
+	padding: 5px;
+}
+
+.c-panel .details-info{
+	margin-top: 5px;
+}
+
+.c-panel .details-info b{
+	color: #555555;
+	display: block;
+	margin-bottom: 4px;
+}
+
+.c-panel .details-info span{
+	display: block;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+.fmt-pdf {background-image:url('%static%/img/reports/fmt-pdf.gif')}
+.fmt-rtf {background-image:url('%static%/img/reports/fmt-rtf.gif')}
+.fmt-xls {background-image:url('%static%/img/reports/fmt-xls.gif')}
+.fmt-csv {background-image:url('%static%/img/reports/fmt-csv.gif')}
+
+.preview .x-panel-body a {
+	text-decoration: none;
+}
+
+.preview .x-panel-body table {
+	background: #e0e0e0;
+}
+
+.preview .x-panel-body table table{
+	margin: 10px;
+	background: #ffffff;
+	border: 1px solid #444444;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+}
+
+.preview .x-panel-body td img{
+	display: block
+}
+
+.reports_history td > div {
+	white-space: normal;
+}
+
+/* 4.5 MIGRATION */
+.preview td {
+	font-size: 8px;
+}
+
+.preview td * {
+	box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;
+}
+
+.preview .x-panel-body table td > div{
+	margin: 10px;
+	background: #ffffff;
+	border: 1px solid #444444;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+}

@@ -1,0 +1,55 @@
+#
+# YAML
+#
+# Template configuration
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# List of JS files used in module
+# / Relative to root folder of JS files
+#
+include:
+  - /ext/ux/form/field/address.js
+
+#
+# List of modules, wich are used in this module
+# / Here are listed the names of modules
+#
+modules:
+  - common/lib/modelslist
+  - common/lib/addresseditor
+  - common/lib/simplegrid
+  - x/obj/company
+  - a/obj/address
+  - c > lib/vtype/paymentaccount
+#
+# List of JS files, included in this module
+# / Relative to the folder that contains this configuration file
+#
+js:
+  - js/view/props.js
+  - js/control/props.js
+  - js/view/manager.js
+  - js/control/manager.js
+  - js/view/contacts.js
+  - js/control/contacts.js
+  - js/view/bank.js
+  - js/control/bank.js
+
+#
+# List of CSS files, wich are plugged in this module
+# / Relative to the folder that contains this configuration file
+#
+css:
+  - css/style.css
+
+#
+# The path to language files
+# / {language} is replaced by the alias (ru, en, de и т.д.)
+# / Relative to the folder that contains this configuration file
+#
+lang:
+  - lang/{{language}}.js

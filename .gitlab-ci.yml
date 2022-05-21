@@ -1,0 +1,20 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build
+
+before_script:
+  - docker info
+
+build_container:
+  stage: build
+  script:
+    - docker build --no-cache --force-rm --rm=true -t registry.gitlab.com/maprox/webjob-service:latest -t registry.gitlab.com/maprox/webjob-service:$CI_BUILD_ID .
+    - docker images
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+    - docker push registry.gitlab.com/maprox/webjob-service
+  only:
+    - master

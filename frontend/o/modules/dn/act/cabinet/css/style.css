@@ -1,0 +1,63 @@
+.dn_cabinet
+{background-image:url('%static%/img/3160/user-worker-boss.png')}
+
+a.contract
+{
+	padding-left: 20px;
+	background: url('%static%/img/3160/blue-document-medium.png') no-repeat;
+}
+
+a.doc_item,
+a.doc_item:hover
+{
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: 3px 0 3px 20px;
+	border-bottom: #ccc dotted 1px;
+	background: url('%static%/img/3160/blue-document-medium.png') 0 5px no-repeat;
+}
+
+.doc_item_name
+{
+	
+}
+
+.doc_item_file
+{
+	font-size: 90%;
+	color: #999;
+}
+
+.no_items
+{
+	color: #999;
+}
+
+a.offer_item,
+a.offer_item:hover
+{
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: 3px 0 3px 20px;
+	border-bottom: #ccc dotted 1px;
+	background: url('%static%/img/3160/briefcase.png') 0 5px no-repeat;
+}
+
+.offer_item_name
+{
+	
+}
+
+.offer_item_dt
+{
+	font-size: 90%;
+	color: #999;
+}
+
+a.offer_not_sended,
+a.offer_not_sended:hover
+{
+	color: #999;
+}

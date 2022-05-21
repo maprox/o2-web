@@ -1,0 +1,11 @@
+.pricesresponse
+{background-image:url('%static%/img/docsnet/prices_response.png')}
+
+.a-accept 
+{background-image:url('%static%/img/select.png')}
+
+.a-delete 
+{background-image:url('%static%/img/cancel.png')}
+
+.a-create 
+{background-image:url('%static%/img/docsnet/table_row_insert.png')}

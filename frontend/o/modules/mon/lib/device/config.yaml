@@ -1,0 +1,108 @@
+#
+# YAML
+#
+# Template configuration
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# List of JS files used in module
+# / Relative to root folder of JS files
+#
+include:
+  - ext/ux/form/field/imageselect.js
+  - ext/ux/form/field/datetime.js
+  - /o/kernel/proxy/period.js
+
+#
+# List of modules, wich are used in this module
+# / Here are listed the names of modules
+#
+modules:
+  - mon/obj/packet
+  - common/lib/datetime
+  - common/lib/periodtoolbar
+  - c > lib/vtype/uid
+  - obj/images
+  - common/lib/modelslist
+  - common/lib/shareaccess
+  - mon/obj/device_sensor
+  - mon/obj/device_protocol
+  - mon/obj/device
+  - mon/obj/device_protocol
+  - x/obj/provider
+  - x/obj/access
+  - obj/ownerinfo
+  - mon/obj/device_command_type
+  - mon/obj/device_command
+  - mon/obj/device_command_template
+  - mon/lib/command_param
+
+  - mon/lib/tracker/globalsat.tr600
+  - mon/lib/tracker/globalsat.tr151
+  - mon/lib/tracker/globalsat.tr203
+  - mon/lib/tracker/globalsat.tr206
+  - mon/lib/tracker/globalsat.gtr128
+  - mon/lib/tracker/globusgps.gltr1mini
+  - mon/lib/tracker/galileo.default
+  - mon/lib/tracker/naviset.gt10
+  - mon/lib/tracker/naviset.gt20
+  - mon/lib/tracker/teltonika.fmxxxx
+  - mon/lib/tracker/teltonika.gh3000
+  - mon/lib/tracker/maprox-rc
+  - mon/lib/tracker/googlelatitude
+  - mon/lib/tracker/atrack.ax5
+  - mon/lib/tracker/autolink.default
+
+#
+# List of JS files, included in this module
+# / Relative to the folder that contains this configuration file
+#
+js:
+  - js/view/windows/conversions.js
+  - js/control/windows/conversions.js
+
+  - js/view/panel.js
+  - js/control/panel.js
+
+  - js/view/list.js
+  - js/control/list.js
+
+  - js/view/tabs.js
+  - js/control/tabs.js
+
+  - js/view/tabs/abstractsettings.js
+  - js/view/tabs/connection.js
+  - js/view/tabs/props.js
+  - js/view/tabs/settings.js
+  - js/view/tabs/sensors.js
+  - js/view/tabs/access.js
+  - js/view/tabs/packets.js
+  - js/view/tabs/commands.js
+
+  - js/control/tabs/abstractsettings.js
+  - js/control/tabs/connection.js
+  - js/control/tabs/props.js
+  - js/control/tabs/settings.js
+  - js/control/tabs/sensors.js
+#  - js/control/tabs/access.js
+  - js/control/tabs/packets.js
+  - js/control/tabs/commands.js
+
+
+#
+# List of CSS files, wich are plugged in this module
+# / Relative to the folder that contains this configuration file
+#
+css:
+  - css/style.css
+
+#
+# The path to language files
+# / {language} is replaced by the alias (ru, en, de и т.д.)
+# / Relative to the folder that contains this configuration file
+#
+lang:
+  - lang/{{language}}.js

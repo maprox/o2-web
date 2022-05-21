@@ -1,0 +1,107 @@
+div.olMapViewport {
+	position: absolute !important;
+	background: url('%static%/img/map-back.png') #eee !important;
+}
+
+.olControlAttribution {
+	position: absolute;
+	font-size: 8px !important;
+	bottom: 0 !important;
+	right: 0 !important;
+	background: rgba(0,0,0,0.1);
+	font-family: Arial;
+	padding: 2px 4px;
+	border-radius: 5px 0 0 0;
+}
+
+/*
+	----------------------
+	      ZOOM PANEL
+	----------------------
+*/
+div.olControlTouchZoomPanel {
+	position: absolute;
+	left: 0px !important;
+	top: 0px !important;
+}
+
+.olControlTouchZoomPanel div {
+	position: relative !important;
+	height: auto !important;
+	width: auto !important;
+}
+
+div.olControlLayerPanel .olControlLayerSwitcherItemInactive,
+div.olControlTouchZoomPanel .olControlTouchZoomInItemInactive,
+div.olControlTouchZoomPanel .olControlTouchZoomOutItemInactive {
+	background: rgba(0,0,0,0.2);
+	margin: 10px;
+	top: 0px !important;
+	cursor: pointer;
+}
+div.olControlTouchZoomPanel .olControlTouchZoomInItemInactive {
+	border-radius: 5px 5px 0 0;
+	margin-bottom: 1px;
+}
+div.olControlTouchZoomPanel .olControlTouchZoomOutItemInactive {
+	border-radius: 0 0 5px 5px ;
+	margin-top: 1px;
+}
+div.olControlTouchZoomPanel .olControlTouchZoomOutItemInactive:after,
+div.olControlTouchZoomPanel .olControlTouchZoomInItemInactive:after{
+	font-weight: bold;
+	content: '+';
+	font-size: 36px;
+	padding:  7px;
+	z-index: 2000;
+	color: #fff;
+	line-height: 1em;
+}
+div.olControlTouchZoomPanel .olControlTouchZoomOutItemInactive:after{
+	content: '–';
+	line-height: 0.9em;
+	padding: 0 8px;
+}
+div.olControlTouchZoomPanel .olControlTouchZoomToMaxExtentItemInactive {
+	display: none;
+}
+
+/*
+	----------------------
+	    LAYER SWITCHER
+	----------------------
+*/
+div.olControlLayerPanel {
+	position: absolute;
+	right: 0px;
+}
+
+div.olControlLayerPanel .olControlLayerSwitcherItemInactive {
+	border-radius: 5px 5px 5px 5px;
+}
+div.olControlLayerPanel .olControlLayerSwitcherItemInactive:after{
+	font-weight: bold;
+	content: '~';
+	font-size : 36px;
+	padding: 7px;
+	z-index: 2000;
+	color: #fff;
+	line-height: 1em;
+}
+
+/*
+	----------------------
+	    BLINKING FIX
+	----------------------
+*/
+.olTileImage, .olAlphaImg {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: all 0 none;
+	transition: none;
+}
+@media (-webkit-transform-3d) {
+	img.olTileImage, img.olAlphaImg {
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+}

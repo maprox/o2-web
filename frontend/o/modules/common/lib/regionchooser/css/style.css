@@ -1,0 +1,7 @@
+div.ymaps-popup{
+	z-index: 100000 !important;
+}
+
+.ymaps-outer-pane {
+	z-index: 100000 !important;
+}

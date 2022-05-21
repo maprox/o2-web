@@ -1,0 +1,42 @@
+.pricesrequest
+{background-image:url('%static%/img/3160/auction-hammer-gavel.png')}
+
+.a-accept
+{background-image:url('%static%/img/select.png')}
+
+.a-delete
+{background-image:url('%static%/img/cancel.png')}
+
+.a-create
+{background-image:url('%static%/img/docsnet/table_row_insert.png')}
+
+.request_expired {
+	color: gray;
+}
+
+.dn-tender-report
+{background-image:url('%static%/img/3160/projection-screen-presentation.png')}
+
+.dn-tender-totals
+{background-image:url('%static%/img/3160/block-small.png')}
+
+.btn-reload
+{background-image:url('%static%/img/3160/arrow-circle-double.png')}
+
+.btn-swap
+{background-image:url('%static%/img/3160/arrow-switch.png')}
+
+.btn-export
+{background-image:url('%static%/img/3160/table-export.png')}
+
+.btn-totals
+{background-image:url('%static%/img/3160/sum.png')}
+
+.minimal-value {
+	font-weight: bold !important;
+	color: #080;
+}
+
+.x-grid-row-summary .x-grid-cell {
+	font: bold 11px/15px tahoma, arial, verdana, sans-serif;
+}

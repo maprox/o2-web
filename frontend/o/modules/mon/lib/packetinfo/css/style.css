@@ -1,0 +1,87 @@
+.mi0 {background-image:url('%static%/img/info.png')}
+.mi1 {background-image:url('%static%/img/lightning.png')}
+.mi2 {background-image:url('%static%/img/lock.png')}
+.status_move {color:#090}
+.status_stay {color:#00c}
+.status_nodata {color:#c00}
+.connection_open {color:#090}
+.connection_dropped {color:#c00}
+.connection_unconfigured {color:#666}
+.battery_unknown {color:#666}
+.battery_normal {color:#090}
+.battery_low {color:#990}
+.battery_critical {color:#900}
+
+.wrappedgrid .loader {
+	background-image: url('%static%/img/packet/loader.gif');
+	margin: 2px;
+	height: 11px;
+	width: 43px;
+}
+
+.last-image {
+	cursor: pointer;
+}
+
+.last-image-description {
+	line-height: 20px;
+	margin-bottom: -20px;
+	z-index: 10000;
+	position: absolute;
+	font-size: 10px;
+	color: white;
+	padding: 0 4px;
+	background: black;
+}
+
+.last-image img {
+	border: 1px solid black;
+	display: block;
+}
+
+.last-image {
+	border: 1px solid transparent;
+	float: left;
+	padding: 4px;
+}
+
+img.image-large {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.last-image.x-item-selected {
+	border-color: #99BBE8;
+}
+
+div.image-info {
+	font-size: 11px;
+	padding: 4px;
+	background: #D8E4F3;
+	color: black;
+	width: 640px;
+	margin: 0;
+	border-bottom: 1px solid #99BBE8;
+}
+
+div.thumbs {
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+}
+
+.set-coords {
+	text-decoration: none;
+	border-bottom: 1px dotted #2E26F8;
+}
+
+.imageview .ux-layout-center-item div, .imageview .ux-layout-center-item span {
+	display: block !important;
+}
+
+.call-clock-panel {
+	font-weight: bold;
+}

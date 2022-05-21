@@ -1,0 +1,50 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2011, Maprox LLC
+# @author     sunsay <box@sunsay.ru>
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/model/model.js
+  - js/model/store.js
+  - js/control/factory.js
+  - js/view/abstract.js
+  - js/view/notify.js
+  - js/view/dialog.js
+  - js/view/event.js
+  - js/view/confirm.js
+  - js/view/info.js
+  - js/view/saved.js
+  - js/view/warning.js
+  - js/view/error.js
+  - js/view/die.js
+  - js/view/countdown.js
+  - js/view/share_confirm.js
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

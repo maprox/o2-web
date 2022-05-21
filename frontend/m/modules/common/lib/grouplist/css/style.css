@@ -1,0 +1,50 @@
+.list-groups .group-all {color:#00f}
+.list-groups .group-search {color:#f90}
+.list-groups .group-selected {color: #090}
+
+.inactive {color: #999}
+.group span {color: #999}
+
+.groupslist .x-title {
+	font-size: 70% !important;
+}
+
+/* --------- */
+
+/* Draw check image on selected items: "v" */
+.checkbox-list .x-list-item.x-item-selected::after {
+	content: "";
+	position: absolute;
+	width: 0.75em;
+	height: 1.25em;
+	top: 50%;
+	left: auto;
+	-webkit-transform: rotate(45deg) skew(5deg);
+	-webkit-transform-origin: 50% 50%;
+	right: 1.1em;
+	border: .35em solid;
+	border-top: none;
+	border-left: none;
+	margin-top: -0.75em;
+	-webkit-transform-origin-x: 50%;
+	-webkit-transform-origin-y: 50%;
+}
+
+/* Do not show background color for checked but not selected items*/
+.checkbox-list .x-list-item.x-item-selected .x-list-item-label {
+	background: #fff;
+	border-color: #d1d1d1;
+	color: #000;
+	text-shadow: none;
+}
+
+/* Coloring of selected item */
+.checkbox-list .x-list-item.selected .x-list-item-label {
+	background-image: none;
+	background-color: #006BB6;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0398FF), color-stop(3%, #007AD0), color-stop(100%, #005C9D));
+	background-image: -webkit-linear-gradient(top, #0398FF,#007AD0 3%,#005C9D);
+	background-image: linear-gradient(top, #0398FF,#007AD0 3%,#005C9D);
+	color: white;
+	text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+}

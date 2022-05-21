@@ -1,0 +1,149 @@
+/**
+ * Style for template
+ */
+
+.mon-device
+{background-image:url('%static%/img/drive.png')}
+
+.deviceseditor_reset
+{background-image:url('%static%/img/arrow_undo.png')}
+
+.deviceseditor_add
+{background-image:url('%static%/img/1000/add.png')}
+
+.deviceseditor_copy
+{background-image:url('%static%/img/action_copy.png')}
+
+.deviceseditor_recyclebin
+{background-image:url('%static%/img/bin.png')}
+
+.deviceseditor_off
+{background-image:url('%static%/img/bullet_red.png')}
+
+.deviceseditor_on
+{background-image:url('%static%/img/bullet_green.png')}
+
+.devicestabsensors_add
+{background-image:url('%static%/img/1000/add.png')}
+
+.devicestabsensors_remove
+{background-image:url('%static%/img/action_delete.png')}
+
+.devicestabsensors_conversions
+{background-image:url('%static%/img/1000/chart_curve.png')}
+
+.deviceswindowconversion_add
+{background-image:url('%static%/img/1000/add.png')}
+
+.deviceswindowconversion_remove
+{background-image:url('%static%/img/action_delete.png')}
+
+.deviceswindowconversion_close
+{background-image:url('%static%/img/1000/accept.png')}
+
+.devicestabfields_add
+{background-image:url('%static%/img/1000/add.png')}
+
+.devicestabfields_remove
+{background-image:url('%static%/img/action_delete.png')}
+
+.deviceswindowconversion_check
+{background-image:url('%static%/img/1000/arrow_rotate_anticlockwise.png')}
+
+.deviceswindowconversion_smoothing
+{background-image:url('%static%/img/1000/chart_curve_add.png')}
+
+.devicestabimages_no {
+	line-height:44px;
+}
+
+.thumb-wrap {
+	float:left;
+	margin:0;
+	padding:5px;
+}
+
+.x-item-selected {
+	background:#eff5fb;
+	border:1px solid #99bbe8;
+	padding:4px;
+}
+.access_expired {
+	color: gray;
+}
+
+div.ownerview {
+	line-height: 150%;
+	font-size: 90%;
+}
+
+div.ownerview strong {
+	font-weight: bold;
+}
+.battery_normal {color:#090}
+.battery_low {color:#990}
+.battery_critical {color:#900}
+
+.gps-signal-info, .gps-signal-meter {
+	display: block;
+	width: 16px;
+	height: 16px;
+
+}
+
+.gps-signal-info {
+	background: url('%static%/img/gps_signal/red.png') !important;
+}
+
+.gps-signal-meter {
+	background: url('%static%/img/gps_signal/green.png') !important;
+	overflow: hidden;
+}
+
+.row_packet_state1 {
+
+}
+.row_packet_state3 {
+	color: #c99;
+}
+.row_packet_state4 {
+	color: #888;
+}
+/* Commands */
+.create_cmd_btn {background-image:url('%static%/img/1000/add.png')}
+/* Commands */
+.column-delete {background-image:url('%static%/img/1000/delete.png')}
+
+.command-delivered {
+	color: #007A00;
+}
+.command-error {
+	color: #c90000;
+}
+
+/* Command type combobox */
+
+.command-type-item-text {
+	float: left;
+}
+
+.transport-icon {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	float: right;
+	position: relative;
+	top: 3px;
+
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.transport-sms {
+	background-image: url('%static%/img/glyphicons-halflings.png');
+	background-position: -72px 0;
+}
+
+.transport-tcp {
+	background-image:url('%static%/img/tcp-icon.gif');
+}

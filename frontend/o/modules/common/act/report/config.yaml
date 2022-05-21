@@ -1,0 +1,64 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - /o/kernel/module.js
+  - /o/utils/base64.js
+  - /ext/ux/preview.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - x/obj/report
+#  - obj/reports
+#  - obj/groupreports
+  - common/lib/paramspanel
+  - common/lib/reportparams
+#  - ui/groups/reports
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/model/history.js
+  - js/view/tabs/description.js
+  - js/view/tabs/history.js
+  - js/view/preview.js
+  - js/view/chooser.js
+  - js/view/settings.js
+  - js/view/panel.js
+  - js/control/tabs/description.js
+  - js/control/tabs/history.js
+  - js/control/preview.js
+  - js/control/chooser.js
+  - js/control/settings.js
+  - js/control/panel.js
+  - js/module.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

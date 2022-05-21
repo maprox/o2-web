@@ -1,0 +1,66 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2011-2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - ext/ux/grid/feature/nomarkdirty.js
+# странно, конечно, что надо подключать файл ядра,
+# но без этого под учеткой поставщика вываливается ошибка
+  - o/kernel/proxy/store.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - dn/obj/account
+  - dn/obj/offer
+  - dn/obj/offer_value
+  - dn/obj/feednorm_value
+  - dn/obj/region
+  - dn/obj/product
+  - dn/obj/measure
+  - common/lib/regionchooser
+  - dn/lib/warehouse
+  - dn/obj/warehouse_list
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/view/objectslist.js
+  - js/view/addpricewindow.js
+  - js/view/list.js
+  - js/view/tabs.js
+  - js/view/panel.js
+  - js/control/objectslist.js
+  - js/control/addpricewindow.js
+  - js/control/list.js
+  - js/control/tabs.js
+  - js/control/panel.js
+  - js/control/module.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

@@ -1,0 +1,28 @@
+/*.ux-flag-en {background-image:url(%static%/img/flags/en.png) ! important;}
+.ux-flag-ru {background-image:url(%static%/img/flags/ru.png) ! important;}*/
+.en {background-image:url(%static%/img/flags/en.png) ! important;}
+.ru {background-image:url(%static%/img/flags/ru.png) ! important;}
+/*
+.ux-icon-combo-icon {
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	width: 18px;
+	height: 16px;
+}
+ 
+/* X-BROWSER-WARNING: this is not being honored by Safari */
+/*
+.x-form-field.ux-icon-combo-input {
+	padding-left: 25px; ! important;
+}
+ 
+.x-form-field-wrap .ux-icon-combo-icon {
+	top: 3px;
+	left: 5px;
+}
+
+.ux-icon-combo-item {
+	background-repeat: no-repeat ! important;
+	background-position: 3px 50% ! important;
+	padding-left: 24px ! important;
+}*/

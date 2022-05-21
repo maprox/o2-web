@@ -1,0 +1,252 @@
+/*
+ * @project    Maprox <http://www.maprox.net>
+ * @copyright  2009-2012, Maprox LLC
+ */
+
+html {height:100%;-webkit-font-smoothing:antialiased;border:0}
+body {height:100%;border:0;margin:0;padding:0;}
+#container {width:440px;}
+h1.plt {color:#fff;font-size:30px;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,0.68);letter-spacing:-1px;margin:0;}
+div.plt {color:#243748;font-size:18px;line-height:24px;text-shadow:0 1px 1px rgba(255,255,255,0.33);}
+div.plt a {color:#142738;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Trebuchet MS', tahoma, arial;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+body.x-container {
+	background: url("%static%/img/header_back.gif") repeat-x #345680;
+}
+
+#zenderror {
+	padding: 50px;
+}
+
+#zenderror h1 {
+	margin-bottom: 10px;
+}
+
+.hide, .hidden {display: none}
+
+/**
+ * ExtJS fixes
+ */
+/*
+.x-datepicker span {
+	color: black !important;
+}
+
+.x-datepicker-header span {
+	color: white !important;
+}
+
+.x-box-layout-ct .x-splitter {
+	background-color: #DFE8F6;
+}
+
+.x-grid-row-editor-errors {
+	display: none;
+}
+*/
+
+.cancel {background-image:url('%static%/img/cancel.png')}
+.save   {background-image:url('%static%/img/disk.png')}
+.find   {background-image:url('%static%/img/find.png')}
+.reset  {background-image:url('%static%/img/arrow_undo.png')}
+
+/* RBE GROUP*/
+
+body.rbegroup {
+	/*background:#ffffff url("%static%/img/status_bg3.jpg") no-repeat center;*/
+}
+
+.w_baseicon{background-image:url('%static%/img/window.png')}
+
+button .save,
+.x-menu-item-icon.save
+{background-image:url('%static%/img/disk.png')}
+
+button .undo,
+.x-menu-item-icon.undo
+{background-image:url('%static%/img/arrow_undo.png')}
+
+button .cancel,
+.x-menu-item-icon.cancel
+{background-image:url('%static%/img/cancel.png')}
+
+.display-none {display: none;}
+
+.wrappedgrid .x-grid-cell-inner,
+.wrappedgrid .x-grid-hd-inner {
+	white-space: normal;
+}
+
+span.emptyGrid {
+	display: block;
+	color: gray;
+	padding: 10px;
+}
+
+/* BUTTONS */
+
+.ap_button {
+	position: relative;
+	overflow: visible;
+	display: inline-block;
+	padding: 0.5em 2em;
+	border: 1px solid #d4d4d4;
+	margin: 0;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #fff;
+	font:10pt/normal sans-serif;
+	color: #333;
+	white-space: nowrap;
+	cursor: pointer;
+	outline: none;
+	background-color: #ececec;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+	background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+	background-image: -o-linear-gradient(#f4f4f4, #ececec);
+	background-image: linear-gradient(#f4f4f4, #ececec);
+	-webkit-background-clip: padding;
+	-moz-background-clip: padding;
+	-o-background-clip: padding-box;
+	/*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	border-radius: 0.2em;
+	/* IE hacks */
+	zoom: 1;
+	*display: inline;
+	*margin-left: 4px;
+}
+
+.ap_button:hover,
+.ap_button:focus,
+.ap_button:active,
+.ap_button.active {
+	border-color: #3072b3;
+	border-bottom-color: #2a65a0;
+	text-decoration: none;
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+	color: #fff;
+	background-color: #3C8DDE;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+	background-image: -moz-linear-gradient(#599bdc, #3072b3);
+	background-image: -o-linear-gradient(#599bdc, #3072b3);
+	background-image: linear-gradient(#599bdc, #3072b3);
+}
+
+.ap_button:active,
+.ap_button.active {
+	border-color: #2a65a0;
+	border-bottom-color: #3884CF;
+	background-color: #3072b3;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+	background-image: -moz-linear-gradient(#3072b3, #599bdc);
+	background-image: -o-linear-gradient(#3072b3, #599bdc);
+	background-image: linear-gradient(#3072b3, #599bdc);
+}
+
+/* overrides extra padding on button elements in Firefox */
+.ap_button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+.ap_button.disabled {
+	border: 1px solid #d4d4d4;
+	margin: 0;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #fff;
+	font:10pt/normal sans-serif;
+	color: #777;
+	cursor: default;
+	background-color: #ececec;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+	background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+	background-image: -o-linear-gradient(#f4f4f4, #ececec);
+	background-image: linear-gradient(#f4f4f4, #ececec);
+	/* IE hacks */
+	*margin-left: 4px;
+}
+
+.ap_button.primary {
+	font-weight: bold;
+}
+
+.ap_button.big {
+	font-size: 12pt;
+}
+
+/* ----------------------------------
+   Common buttons
+   ---------------------------------- */
+
+button .print,
+.x-btn-button .print,
+.x-menu-item-icon.print,
+button .btn-print,
+.x-btn-button .btn-print,
+.x-menu-item-icon.btn-print
+{background-image:url('%static%/img/3160/printer.png')}
+
+button .btn-create,
+.x-btn-button .btn-create,
+.x-menu-item-icon.btn-create
+{background-image:url('%static%/img/add.png')}
+
+button .btn-delete,
+.x-btn-button .btn-delete,
+.x-menu-item-icon.btn-delete
+{background-image:url('%static%/img/bin.png')}
+
+button .btn-trash,
+.x-btn-button .btn-trash,
+.x-menu-item-icon.btn-trash
+{background-image:url('%static%/img/bin.png')}
+
+button .btn-ok,
+.x-btn-button .btn-ok,
+.x-menu-item-icon.btn-ok
+{background-image:url('%static%/img/3160/tick.png')}
+
+button .btn-save,
+.x-btn-button .btn-save,
+.x-menu-item-icon.btn-save
+{background-image:url('%static%/img/disk.png')}
+
+button .btn-cancel,
+.x-btn-button .btn-cancel,
+.x-menu-item-icon.btn-cancel
+{background-image:url('%static%/img/cancel.png')}
+
+button .btn-export,
+.x-btn-button .btn-export,
+.x-menu-item-icon.btn-export
+{background-image:url('%static%/img/3160/disk-black.png')}
+
+
+/* support box */
+
+div.support-box {
+	display: none !important; 
+}
+
+div#header {
+	background: url("%static%/img/bg_header2.png") repeat-x #567;
+	border-bottom: 2px solid #345 !important;
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+	z-index: 2;
+}
+
+div#desktop-body {
+	background:#567 url("%static%/img/bg_leather.png") repeat;
+	border: none !important;
+}
+
+#splash {height:100%;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;
+border:0;background:#3c5a76 url("%static%/img/status_bg.png") no-repeat center;margin:0;padding:0;}

@@ -1,0 +1,26 @@
+/**
+ * Style for template
+ */
+
+.dn-workers
+{background-image:url('%static%/img/3160/user-business.png')}
+
+.row-primary {
+}
+
+.row-primary .x-grid-cell-last div {
+	border-right: 8px solid #57A957;
+}
+
+.add_btn
+{background-image:url('%static%/img/1000/add.png')}
+
+.remove_btn
+{background-image:url('%static%/img/action_delete.png')}
+
+.finish_btn
+{background-image:url('%static%/img/1000/accept.png')}
+
+.profile-photo {
+	cursor: pointer
+}

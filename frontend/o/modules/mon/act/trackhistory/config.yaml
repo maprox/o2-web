@@ -1,0 +1,86 @@
+#
+# YAML
+#
+# Template module
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - /o/kernel/ui/toolpanel.js
+  - /o/kernel/module.js
+  - /o/kernel/proxy/period.js
+  - /ext/ux/chart/Highcharts.js
+  - /ext/ux/chart/Highcharts/Serie.js
+  - /ext/ux/chart/Highcharts/SplineSerie.js
+  - /ext/ux/chart/Highcharts/LineSerie.js
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - common/lib/timeperiod
+  - common/lib/periodtoolbar
+  - common/lib/eventspanel
+#  - obj/works
+  - n/obj/work
+  - obj/events
+  - mon/obj/device
+  - mon/obj/track
+  - mon/obj/coord
+  - mon/obj/packet
+  - mon/lib/map
+  - mon/lib/map/engines/openlayers
+  - mon/lib/packetinfo
+  - ui/groups/devices
+  - ui/groups/zones
+  - mon/obj/device_sensor
+  - mon/obj/device_sensor_history_setting
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/model/summarymodel.js
+  - js/model/trackmodel.js
+  - js/model/trackstore.js
+  - js/view/baselayer.js
+  - js/view/detailedreport.js
+  - js/view/packetinfo.js
+  - js/view/packetdata.js
+  - js/view/panel.js
+  - js/view/detailpanel.js
+  - js/view/detailwindow.js
+  - js/view/sensors.js
+
+  - js/view/timeslider.js
+  - js/view/tracksplayer.js
+
+  - js/control/sensors.js
+  - js/control/detailedreport.js
+  - js/control/detailpanel.js
+  - js/control/detailwindow.js
+  - js/control/packetdata.js
+  - js/control/panel.js
+  - js/control/tracksplayer.js
+  - js/module.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

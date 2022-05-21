@@ -1,0 +1,83 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - ext/ux/grid/headertooltip.js
+  - ext/ux/grid/feature/nomarkdirty.js
+  - o/ux/grid/plugin/rowexpander.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - x/obj/tariff
+  - dn/obj/act
+  - common/obj/billing_account
+  - common/obj/billing_payment_type
+  - common/obj/billing_invoice
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/model/store-act.js
+  - js/model/model-billinghistory.js
+  - js/model/store-billinghistory.js
+  - js/model/model-billinginvoice.js
+  - js/model/store-billinginvoice.js
+  - js/view/tabs/info.js
+  - js/view/tabs/invoice.js
+  - js/view/tabs/act.js
+  - js/view/tabs/history.js
+  - js/view/tabs.js
+  - js/view/list.js
+  - js/view/panel.js
+  - js/view/misc/billingwindow.js
+  - js/view/misc/pending.js
+  - js/view/misc/editlimit.js
+  - js/view/misc/edittariff.js
+  - js/view/misc/editbalance.js
+  - js/view/misc/markpaid.js
+  - js/view/misc/exportwindow.js
+  - js/view/misc/createactwindow.js
+  - js/control/tabs/info.js
+  - js/control/tabs/invoice.js
+  - js/control/tabs/act.js
+  - js/control/tabs/history.js
+  - js/control/tabs.js
+  - js/control/list.js
+  - js/control/panel.js
+  - js/control/misc/pending.js
+  - js/control/misc/editlimit.js
+  - js/control/misc/edittariff.js
+  - js/control/misc/editbalance.js
+  - js/control/misc/markpaid.js
+  - js/control/misc/exportwindow.js
+  - js/control/misc/createactwindow.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

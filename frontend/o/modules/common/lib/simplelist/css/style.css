@@ -1,0 +1,11 @@
+.list_add
+{background-image:url('%static%/img/add.png')}
+
+.list_copy
+{background-image:url('%static%/img/3160/document-copy.png')}
+
+.list_edit
+{background-image:url('%static%/img/3160/pencil-small.png')}
+
+.list_remove
+{background-image:url('%static%/img/bin.png')}

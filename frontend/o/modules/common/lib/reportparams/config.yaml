@@ -1,0 +1,60 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - /o/kernel/proxy/period.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - ui/groups/devices
+  - ui/groups/zones
+  - common/lib/periodtoolbar
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/view/paramspanels/simple.js
+  - js/control/paramspanels/simple.js
+  - js/view/paramspanels/bool.js
+  - js/view/paramspanels/date.js
+  - js/view/paramspanels/device.js
+  - js/control/paramspanels/device.js
+  - js/view/paramspanels/float.js
+  - js/view/paramspanels/int.js
+  - js/view/paramspanels/period.js
+  - js/control/paramspanels/period.js
+  - js/view/paramspanels/zone.js
+  - js/control/paramspanels/zone.js
+  - js/view/paramspanels/string.js
+  - js/view/paramspanels/maxspeed.js
+  - js/view/panel.js
+  - js/control/panel.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

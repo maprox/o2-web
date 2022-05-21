@@ -1,0 +1,38 @@
+.settings{
+	background-image:url('%static%/img/settings.png');
+	background-repeat: no-repeat !important;
+}
+
+.x-tab-strip-text.act_settings,
+button.act_settings,
+.x-menu-item-icon.act_settings
+{background-image:url('%static%/img/settings.png')}
+
+.n-create
+{background-image:url('%static%/img/action_add.png')}
+
+.n-edit
+{background-image:url('%static%/img/action_edit.png')}
+
+.n-delete
+{background-image:url('%static%/img/action_delete.png')}
+
+.row-primary {
+}
+
+.row-primary .x-grid-cell-last div {
+	border-right: 8px solid #57A957;
+}
+
+.add_btn
+{background-image:url('%static%/img/1000/add.png')}
+
+.remove_btn
+{background-image:url('%static%/img/action_delete.png')}
+
+.finish_btn
+{background-image:url('%static%/img/1000/accept.png')}
+
+/*.delete-button .x-btn-inner {
+	color: #A80000;
+}*/

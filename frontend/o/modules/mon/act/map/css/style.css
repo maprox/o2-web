@@ -1,0 +1,76 @@
+.btnzoneditor {background-image:url('%static%/img/3160/layer-shape-polygon.png')}
+.btnfollow {background-image:url('%static%/img/3160/magnet-blue.png')}
+.btnshowtrack {background-image:url('%static%/img/3160/layer-select-point.png')}
+.btnshowlabels {background-image:url('%static%/img/3160/edit-outline.png')}
+.map {background-image:url('%static%/img/map.png')}
+.mi0 {background-image:url('%static%/img/info.png')}
+.mi1 {background-image:url('%static%/img/lightning.png')}
+.mi2 {background-image:url('%static%/img/lock.png')}
+.waylist_ico {background-image:url('%static%/img/3160-shadowles/layer-shape-curve.png')}
+.commands_ico {background-image:url('%static%/img/trigger_action.png')}
+.drivers_ico {background-image:url('%static%/img/3160/user-worker.png')}
+
+table.modeminfo {
+	background: #DFE8F6;
+}
+
+table.modeminfo,
+table.modeminfo table{
+	width: 100%;
+}
+
+table.modeminfo{
+	padding: 5px;
+}
+
+table.modeminfo td.mi-param{
+	font-weight: bold;
+	width: 120px;
+}
+
+.mi-param,
+.mi-value {
+	padding: 3px;
+}
+
+table.mi-last{
+	background: #f0f0f0;
+	margin: 2px;
+	padding: 4px;
+	border: 1px dotted #808080;
+}
+
+table.mi-last td,
+table.mi-last th{
+	padding: 2px;
+	vertical-align: top;
+}
+
+table.mi-last tr.mi-header th{
+	background: #e0e0e0;
+}
+.call_btn
+{background-image:url('%static%/img/phone/call-green.png')}
+
+.endcall_btn
+{background-image:url('%static%/img/phone/call-red.png')}
+
+.map-geozone-panel {
+	z-index: 100
+}
+
+.btn-driver-assign {
+	background-image:url('%static%/img/3160/user--plus.png')
+}
+.btn-driver-dismiss {
+	background-image:url('%static%/img/3160/user--arrow.png')
+}
+.btn-driver-delete {
+	background-image:url('%static%/img/3160/user--minus.png')
+}
+
+span.drivers {
+	font-size: 200%;
+	text-align: center;
+	padding: 40px;
+}

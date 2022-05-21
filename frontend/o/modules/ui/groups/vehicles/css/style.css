@@ -1,0 +1,12 @@
+.row_groupmoving td,
+.row_groupstill td,
+.row_grouplost td
+{
+	color: #33a;
+}
+
+.row_groupmoving .x-grid-checkheader,
+.row_groupstill .x-grid-checkheader,
+.row_grouplost .x-grid-checkheader {
+	background: none;
+}

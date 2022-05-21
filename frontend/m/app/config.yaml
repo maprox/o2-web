@@ -1,0 +1,75 @@
+#
+# YAML
+#
+# Mobile application configuration
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# List of JS files used in module
+# / Relative to root folder of JS files
+#
+include:
+  - /ext/patches/data/store.js
+  - /c/utils/md5.js
+  - /c/utils/base64.js
+  - /c/cfg.js
+  - /m/cfg.js
+  - /c/utils/err.js
+  - /c/utils/utils.js
+  - /o/kernel/object.js
+  - /o/kernel/proxy.js
+  - /o/kernel/proxy/ajax.js
+  - /c/kernel/manager/lang.js
+  - /o/kernel/manager/model.js
+  - /c/kernel/manager/auth.js
+  - /o/kernel/manager/state.js
+  - /o/kernel/manager/history.js
+  - /c/ui/module.js
+  - /c/ui/panel.js
+
+  # sencha touch specific components
+  - /m/kernel/ui/panel.js
+  - /m/kernel/ui/tabpanel.js
+
+  # sencha touch taskmanager (from extjs source)
+  - /m/kernel/taskmanager.js
+
+  # UX pacthes
+  - /m/ux/segmentedbutton.js
+
+#
+# List of modules, wich are used in this module
+# / Here are listed the names of modules
+#
+modules:
+  - o > common/obj/settings
+  # - ui/desktop/{{layout}}
+  - ui/desktop/big
+  - lib/message
+
+#
+# List of JS files, included in this module
+# / Relative to the folder that contains this configuration file
+#
+js:
+  - ../../o/app/js/control/app.js
+
+#
+# List of CSS files, wich are plugged in this module
+# / Relative to the folder that contains this configuration file
+#
+css:
+  - css/style.css
+
+#
+# The path to language files
+# / {language} is replaced by the alias (ru, en, de и т.д.)
+# / Relative to the folder that contains this configuration file
+#
+lang:
+  - ../../o/lang/{{language}}/common.js
+  - ../../o/lang/{{language}}/err.js
+  - ../../o/lang/{{language}}/touch.js

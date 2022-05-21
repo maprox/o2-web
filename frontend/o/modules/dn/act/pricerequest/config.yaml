@@ -1,0 +1,77 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - ext/ux/grid/printer.js
+  - ext/ux/form/field/datetime.js
+  - o/kernel/proxy/store.js
+  - o/kernel/ui/searchgrid.js
+  - o/utils/convert.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - dn/obj/warehouse
+  - dn/obj/warehouse_list
+  - dn/obj/product
+  - dn/obj/supplier
+  - dn/obj/supplier-account
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/view/panel.js
+  - js/view/pr_list.js
+  - js/view/pr_edit.js
+  - js/view/pr_editlist.js
+  - js/view/pr_editlines.js
+  - js/view/pr_answer.js
+  - js/view/pr_answerlist.js
+  - js/view/pr_answerlines.js
+  - js/view/pr_report.js
+  - js/view/pr_totals.js
+  - js/control/module.js
+  - js/control/panel.js
+  - js/control/pr_list.js
+  - js/control/pr_edit.js
+  - js/control/pr_editlist.js
+  - js/control/pr_editlines.js
+  - js/control/pr_answer.js
+  - js/control/pr_answerlist.js
+  - js/control/pr_answerlines.js
+  - js/control/pr_report.js
+  - js/control/pr_totals.js
+  - js/model/list.js
+  - js/model/editlist.js
+  - js/model/editlines.js
+  - js/model/answerlist.js
+  - js/model/answerlines.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

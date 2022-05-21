@@ -1,0 +1,180 @@
+body {
+	background: #456 url("%static%/img/bg_leather.png") repeat;
+}
+
+#headerTitle {
+	font-family: 'Trebuchet MS';
+	font-size: 18px;
+	line-height: 34px;
+	padding: 0px 10px;
+	/*border-right: 2px dotted #345 !important;*/
+	color: white;
+}
+
+#headerTitle p {
+	display: none
+}
+
+.maprox #headerTitle,
+.glosav #headerTitle,
+.linkomm #headerTitle
+{
+	background: url('%static%/img/logo/maprox/logo-white.png') no-repeat 8px;
+	width: 46px;
+	height: 34px;
+	padding: 0 !important;
+}
+
+.linkomm #headerTitle {
+	background-image: url('%static%/img/logo/linkomm/logo-white.png');
+}
+
+.glosav #headerTitle {
+	background-image: url('%static%/img/logo/glosav/logo-white.png');
+}
+
+.glosav div#header {
+	background-image: none;
+	background: #558Ca9;
+	border-bottom: 2px solid #579 !important;
+}
+
+.glosav #splash {
+	background-image: none;
+	background: #558Ca9;
+}
+
+.x-tab button .x-tab-inner {
+	background-position: 0;
+}
+
+#userinfo {
+	text-align: right;
+}
+
+#ui_firm,
+#ui_user,
+#ui_time,
+#ui_date,
+#ui_login,
+#headerContainer a
+{
+	margin: 0 4px;
+}
+
+#ui_login {
+	margin: 10px 0;
+}
+
+#ui_date {
+	color: #ECE9DF;
+	margin-right: 4px;
+}
+
+#ui_time {
+	margin-left: 0px;
+}
+
+#headerInfo {
+	line-height: 24px;
+}
+
+#ui_firm {
+	font-weight: bold;
+}
+
+#ui_time {
+	padding-left: 18px;
+	color: #ECE9DF;
+	background: url('%static%/img/clock.png') no-repeat;
+}
+
+#headerNotifications {
+	line-height: 34px;
+	margin-right: 20px;
+}
+
+#ui_countdown {
+	color: #fff;
+	padding-left: 18px;
+	background: url('%static%/img/warning.png') no-repeat;
+}
+
+.x-btn-icon.usermenu,
+.x-btn-icon-el.usermenu {
+	background-image: url('%static%/img/3160/user.png');
+}
+.x-mask-msg.text-mask .x-mask-msg-text{
+	padding-top: 0;
+	background: none;
+}
+
+#connectionInfo {
+	line-height: 34px;
+	padding-top: 8px;
+}
+
+.connection-icon {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.connection-icon.online {
+	background-image: url('%static%/img/wifi-salad.png');
+}
+
+.connection-icon.offline {
+	background-image: url('%static%/img/wifi-red.png');
+}
+/*
+	HEAD MENU
+*/
+/*
+.head-menu .x-menu-body {
+	background-color: #000 !important;
+	border-color: #000;
+}
+
+.head-menu .x-menu-item-text {
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+}
+
+.head-menu .x-menu-item-link {
+	line-height: 30px;
+	padding-left: 38px;
+}
+
+.head-menu .x-menu-item-icon,
+.head-menu .x-menu-item-active .x-menu-item-icon {
+	top: 8px;
+	left: 12px;
+}
+
+.head-menu .x-menu-item-active {
+	background-color: #345;
+	background-image: none !important;
+	margin: 0px;
+	border: 1px solid #345 !important;
+	cursor: pointer;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.head-menu .x-menu-item-separator {
+	height: 2px;
+	border-top: solid 1px #345;
+	background-color: #222;
+	margin: 2px 0px;
+}
+
+.head-menu .x-menu-scroll-top,
+.head-menu .x-menu-scroll-bottom {
+	height: 16px;
+}
+*/

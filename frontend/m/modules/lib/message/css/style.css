@@ -1,0 +1,104 @@
+/* Message box */
+
+.msg .x-box-mc {
+	font-size: 14px;
+}
+
+#msg-div {
+	position: absolute;
+	left: 35%;
+	top: 10px;
+	width: 300px;
+	z-index: 100000;
+}
+
+#msg-div .msg {
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin-top: 2px;
+	padding: 10px 15px;
+}
+
+#msg-div .msg.info {
+	background: #345680;
+	border: 2px solid #99BBE8;
+	color: #fff;
+}
+
+#msg-div .msg.warn {
+	background: #ff0;
+	border: 2px solid #000;
+	color: #000;
+}
+
+#msg-div .msg.error {
+	background: #fffafa;
+	border: 2px solid #f00;
+	color: #f00;
+}
+
+#msg-div .msg.event {
+	background: url('%static%/img/exclamation.png') right no-repeat #fff !important;
+	border: 2px solid #000;
+	padding-right: 50px;
+	color: #000;
+	cursor: pointer;
+}
+
+#msg-div .msg h3 {
+	margin: 0 0 8px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#msg-div .msg p {
+	margin: 0;
+}
+
+.reset_msg {
+	text-align: center;
+	padding: 150px 0;
+}
+
+.reset_submit {
+	line-height: 14px;
+	padding: 2px 10px;
+	margin-top: 14px;
+}
+
+.stacked-title {
+	padding-right: 15px !important;
+}
+
+.stacked-title h3 {
+	display: inline;
+}
+
+.stacked-title .msg-count {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 5px;
+	margin-left: 10px;
+	padding: 0px 5px;
+	background-color: #006600;
+}
+
+.stacked-title .close {
+	float: right;
+}
+
+.stacked-messages {
+	overflow: hidden;
+}
+
+.stacked-messages .image {
+	float: left;
+	position: absolute;
+	bottom: -30px;
+	z-index: 100001;
+}
+
+.msg.display-none {
+	display: none !important;
+}

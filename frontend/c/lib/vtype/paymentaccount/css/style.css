@@ -1,0 +1,10 @@
+.validation-loading input.x-form-field {
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	background-image: url('%static%/ext-themes/4.1.1/images/bright/form/text-bg.gif');
+	border-color: #7EADD9;
+}
+
+.validation-loading .x-form-invalid-icon {
+	background-image:url('%static%/img/reload.gif');
+}

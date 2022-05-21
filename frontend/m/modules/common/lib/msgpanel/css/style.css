@@ -1,0 +1,41 @@
+.msg
+{
+	font-size: 16px;
+}
+
+.msg .datetime
+{
+	padding-bottom: 10px;
+}
+
+.msg .date
+{
+	color: #666;
+}
+
+.x-item-selected .msg .date
+{
+	color: #ccc;
+}
+
+.msg .time
+{
+	color: #049;
+	font-weight: bold;
+}
+
+.x-item-selected .msg .time
+{
+	color: #9cf;
+}
+
+.msg.packet .time
+{
+	background: url('%static%/img/3160/magnifier-zoom-fit.png') 100% 50% no-repeat;
+	padding-right: 24px;
+}
+
+.msg .text
+{
+	
+}

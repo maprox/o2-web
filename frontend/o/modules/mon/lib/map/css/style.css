@@ -1,0 +1,61 @@
+.gps-signal-info, .gps-signal-meter {
+	display: block;
+	width: 16px;
+	height: 16px;
+
+}
+
+.gps-signal-info {
+	background: url('%static%/img/gps_signal/red.png') !important;
+}
+
+.gps-signal-meter {
+	background: url('%static%/img/gps_signal/green.png') !important;
+	overflow: hidden;
+}
+
+.packet_balloon_alert td,
+.packet_balloon_alert_hidden td,
+.packet_balloon_alert_visible td,
+.packet_balloon_normal td
+{
+	max-width: 200px;
+}
+
+.packet_balloon_alert {}
+
+.packet_balloon_normal {}
+
+.packet_balloon_normal td .loader {
+	background-image: url('%static%/img/packet/loader.gif');
+	margin: 2px;
+	height: 11px;
+	width: 43px;
+}
+
+.packet_balloon_alert_hidden {
+	display: none;
+}
+
+.packet_balloon_alert_visible {}
+
+.tiptext *{
+	color: #666 !important;
+}
+
+.fake_anchor {
+	text-decoration: underline;
+	text-color: #999 !important;
+}
+
+.fake_anchor.padded {
+	padding-top: 15px !important;
+}
+
+.fake_anchor span {
+	cursor: pointer;
+}
+
+.fake_anchor_right {
+	text-align: right;
+}

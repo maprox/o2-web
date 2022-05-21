@@ -1,0 +1,22 @@
+.access-type-condition {
+	color: #858585 !important;
+	font-size: 80%;
+}
+.access-list-save {
+	background-image: url('%static%/img/disk.png')
+}
+.access-list-reset {
+	background-image: url('%static%/img/arrow_undo.png')
+}
+.users_list_search
+{background-image:url('%static%/img/find.png') !important}
+
+.users_list_add
+{background-image:url('%static%/img/add.png') !important}
+
+.users_list_cancel
+{background-image:url('%static%/img/cancel.png') !important}
+
+
+.obj-access-list
+{background-image:url('%static%/img/lock.png')}

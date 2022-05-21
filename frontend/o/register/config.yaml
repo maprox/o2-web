@@ -1,0 +1,70 @@
+#
+# YAML
+#
+# Registration page config
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - /c/utils/ie-patches.js
+  - /c/utils/md5.js
+  - /c/cfg.js
+  - /c/utils/err.js
+  - /c/utils/utils.js
+  - /c/ui/module.js
+  - /c/ui/panel.js
+  - /o/kernel/ui/panel.js
+  - /c/kernel/manager/lang.js
+  - /o/kernel/manager/model.js
+  - /ext/ux/form/field/address.js
+  - ext/ux/form/field/file.js
+  - ext/data/model.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - common/lib/addresseditor
+  - common/lib/message
+  - common/act/supportbox
+  - a/obj/address
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/view/viewport.js
+  - js/view/panel.js
+  - js/view/form.js
+  - js/control/form.js
+  - js/control/app.js
+  - js/view/monitoring.js
+  - js/view/supply.js
+  - js/view/confirm.js
+  - js/control/supply.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/register.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - ../lang/{{language}}/common.js
+  - ../lang/{{language}}/err.js
+  - ../lang/{{language}}/ext.js
+  - lang/{{language}}.js

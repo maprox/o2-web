@@ -1,0 +1,56 @@
+#
+# YAML
+#
+# Map module configuration
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# List of JS files used in module
+# / Relative to root folder of JS files
+#
+include:
+  - /m/kernel/lib/map/baselayer.js
+  - /o/kernel/proxy/period.js
+
+#
+# List of modules, wich are used in this module
+# / Here are listed the names of modules
+#
+modules:
+  - common/lib/periodchooser
+  - mon/lib/map
+  - mon/lib/map/engines/openlayers
+  - mon/lib/objectsgroupslist
+  - o > mon/obj/track
+  - o > mon/obj/coord
+  - o > mon/obj/packet
+
+#
+# List of JS files, included in this module
+# / Relative to the folder that contains this configuration file
+#
+js:
+  - js/module.js
+  - js/view/baselayer.js
+  - js/view/trackhistory.js
+  - js/view/trackslist.js
+  - js/control/trackhistory.js
+  - js/control/trackslist.js
+
+#
+# List of CSS files, wich are plugged in this module
+# / Relative to the folder that contains this configuration file
+#
+css:
+  - css/style.css
+
+#
+# The path to language files
+# / {language} is replaced by the alias (ru, en, de и т.д.)
+# / Relative to the folder that contains this configuration file
+#
+lang:
+  - lang/{{language}}.js

@@ -1,0 +1,7 @@
+.x-window-header-icon.supportbox,
+.x-menu-item-icon.supportbox
+{background-image: url('%static%/img/3160/balloon-white.png');}
+
+.supportbox .x-panel-body-default {
+	background-color: transparent !important;
+}

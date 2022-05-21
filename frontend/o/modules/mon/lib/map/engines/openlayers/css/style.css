@@ -1,0 +1,217 @@
+.olMapViewport {
+	background: url('%static%/img/map-back.png') #eee !important;
+}
+
+/*
+.olControlPanZoom {
+	left: auto !important;
+	right: 44px !important;
+}
+
+div.olControlLayerSwitcher {
+	top: 150px !important;
+}
+*/
+
+.olPopup div span {
+	display: none !important;
+}
+
+.olPopup div {
+	background: url('%static%/img/map_box_back.png') !important;
+	background-color: transparent !important;
+	width: auto !important;
+}
+
+.olPopup .gps-signal-info {
+	width: 16px !important;
+	background: url('%static%/img/gps_signal/red.png') !important;
+}
+
+.popupFramedCloud td {
+	padding: 3px;
+	font-size: 10px;
+}
+
+.olPopup .gps-signal-meter {
+	background: url('%static%/img/gps_signal/green.png') !important;
+}
+
+.olIconTooltip {
+	height: 24px !important;
+	margin-top: -10px\9
+}
+
+*:first-child+html .olIconTooltip {
+	margin-top: -20px !important;
+}
+
+div.markerlbl {
+	background: #f0f8ff;
+	padding: 2px 4px;
+	border: 1px solid #8899aa;
+	margin-top: 18px;
+	margin-left: -25px;
+	width: 50px;
+	text-align: center;
+}
+
+.device_descr,
+.device_descr * {
+	border: none;
+	font-size: 10px;
+}
+
+.device_descr_row1, .device_descr_row2, .device_descr_row3 {
+	font-weight: bold;
+}
+
+.device_descr td {
+	padding: 4px;
+	padding-right: 8px;
+}
+
+.olControlPanel {
+	display: block;
+	width: 200px;
+	height: 32px;
+	margin-left: 50px;
+	margin-top: 19px;
+}
+
+.olControlNavigationItemInactive, .olControlNavigationItemActive,
+.olControlMeasureItemActive, .olControlMeasureItemInactive,
+.olControlSearchControlItemInactive, .olControlSearchControlItemActive,
+.olControlGeocodeControlItemInactive, .olControlGeocodeControlItemActive {
+	display: block;
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-left: 8px;
+}
+
+.olControlMeasureItemInactive {
+	cursor: pointer;
+	background: url('%static%/img/toolbar/ruler.png') no-repeat;
+}
+
+.olControlMeasureItemActive {
+	background: url('%static%/img/toolbar/ruler_active.png') no-repeat;
+}
+
+.olControlNavigationItemInactive {
+	cursor: pointer;
+	background: url('%static%/img/toolbar/mover.png') no-repeat;
+}
+
+.olControlNavigationItemActive {
+	cursor: pointer;
+	background: url('%static%/img/toolbar/mover_active.png') no-repeat;
+}
+
+.olControlSearchControlItemInactive {
+	cursor: pointer;
+	background: url('%static%/img/toolbar/address.png') no-repeat;
+}
+
+.olControlSearchControlItemActive {
+	background: url('%static%/img/toolbar/address_active.png') no-repeat;
+}
+
+.olControlGeocodeControlItemInactive {
+	cursor: pointer;
+	background: url('%static%/img/toolbar/geocode.png') no-repeat;
+}
+
+.olControlGeocodeControlItemActive {
+	background: url('%static%/img/toolbar/geocode_active.png') no-repeat;
+}
+
+.olSearchBox {
+	border: 1px solid black;
+	display: block;
+	width: 300px;
+	height: 30px;
+	z-index: 10000 !important;
+	position: absolute;
+	left: 58px;
+	top: 60px;
+	background: #000;
+	opacity: 0.75;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.olSearchBox input {
+	position: relative;
+	top: 6px;
+	left: 5px;
+	width: 285px;
+	border: 1px solid #fff;
+	background: #e5e5e5;
+}
+
+.geocodeCursor {
+	cursor: help;
+}
+
+.waitCursor {
+	cursor: wait;
+}
+
+.olControlAttribution {
+	bottom: 0 !important;
+	padding: 10px;
+}
+
+/*
+	----------------------
+	    LAYER SWITCHER
+	----------------------
+*/
+div.olControlLayerPanel {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+}
+
+div.olControlLayerPanel .olControlLayerSwitcherItemInactive {
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background: url('%static%/img/toolbar/layerlist.png') no-repeat;
+}
+
+div.olControlLayerPanel .olControlLayerSwitcherItemActive {
+	cursor: pointer;
+	background: url('%static%/img/toolbar/layerlist_active.png') no-repeat;
+}
+
+.layer_list {
+	border: none;
+	opacity: 0.75;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #000000 !important;
+	padding: 5px;
+	color: #FFCCAA !important;
+	font-weight: bold !important;
+}
+
+.layer_list * {
+	cursor: pointer;
+}
+
+.layer_list .x-menu-icon-separator {
+	display: none;
+}
+
+.layer_list .x-form-item {
+	font: inherit;
+}
+
+/*.layer_list .x-form-radio {
+	background-image: url("%static%/ext-themes/4.1.1/images/bright/form/checkbox.gif") !important;
+}*/

@@ -1,0 +1,15 @@
+/*
+ * Таблица стилей.
+ *
+ * @project    Maprox <http://www.maprox.net>
+ * @copyright  2012, Maprox LLC
+ */
+
+.n-create
+{background-image:url('%static%/img/action_add.png')}
+
+.n-edit
+{background-image:url('%static%/img/action_edit.png')}
+
+.n-delete
+{background-image:url('%static%/img/action_delete.png')}

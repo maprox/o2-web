@@ -1,0 +1,90 @@
+.billing_history
+{background-image:url('%static%/img/3160/documents-stack.png')}
+
+.billing_info
+{background-image:url('%static%/img/3160/information-frame.png')}
+
+.billing_invoice
+{background-image:url('%static%/img/3160/document-invoice.png')}
+
+.billing_act
+{background-image:url('%static%/img/3160/document-task.png')}
+
+.i-cancel
+{background-image:url('%static%/img/action_delete.png')}
+
+.i-do
+{background-image:url('%static%/img/action_check.png')}
+
+.i-print
+{background-image:url('%static%/img/3160/printer.png')}
+
+.i-paid
+{background-image:url('%static%/img/3160/money-coin.png')}
+
+.payment_window {
+	background-color: #FFFFFF;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.payment_window td, .payment_window th {
+	border-color: #333333;
+	border-width: 1px;
+	border-style: solid;
+	padding: 5px 15px;
+	text-align: center;
+	font-family: tahoma,arial,verdana,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 11px;
+	color: #022346;
+}
+
+.x-grid-row.debit .operation
+{color: red}
+
+.x-grid-row.refill .operation
+{color: green}
+
+.x-grid-row.actions .operation
+{color: grey}
+
+table.billinghistorydetails
+{
+	margin: 8px;
+	border-collapse: collapse;
+}
+
+table.billinghistorydetails td,
+table.billinghistorydetails th
+{
+	border: 1px solid #888;
+	padding: 2px 8px 2px 8px;
+	background-color: #fafafa;
+}
+
+table.billinghistorydetails th
+{
+	font-weight: bold;
+	background-color: #0f0f0f;
+	color: #fff;
+}
+
+table.billinghistorydetails .m
+{
+	text-align: right;
+}
+
+table.billinghistorydetails .c
+{
+	text-align: center;
+}
+
+span.new_tariff
+{
+	font-style: italic;
+	font-size: 90%;
+	color: #666666;
+}

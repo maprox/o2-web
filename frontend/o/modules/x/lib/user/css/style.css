@@ -1,0 +1,37 @@
+.userseditor
+{background-image:url('%static%/img/1000/user.png')}
+
+.userseditor_reset
+{background-image:url('%static%/img/arrow_undo.png')}
+
+.userseditor_add
+{background-image:url('%static%/img/add.png')}
+
+.userseditor_copy
+{background-image:url('%static%/img/action_copy.png')}
+
+.userseditor_recyclebin
+{background-image:url('%static%/img/bin.png')}
+
+.userseditor_off
+{background-image:url('%static%/img/bullet_red.png')}
+
+.userseditor_on
+{background-image:url('%static%/img/bullet_green.png')}
+
+.usereditor_props
+{background-image:url('%static%/img/1000/wrench.png')}
+
+.usereditor_access
+{background-image:url('%static%/img/1000/key.png')}
+
+.next_accesslevels_header
+{
+	margin: 10px 0 15px 0 !important;
+}
+
+.next_accesslevels_header .x-panel-header
+{
+	border: none !important;
+	background: none !important;
+}

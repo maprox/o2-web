@@ -1,0 +1,7 @@
+.mon_fuel_consumption_report {background-image:url('%static%/img/3160/chart.png')}
+.fcr_close
+{background-image:url('%static%/img/3160/cross-circle.png')}
+
+.row-report-status-2 {
+	color: #757575;
+}

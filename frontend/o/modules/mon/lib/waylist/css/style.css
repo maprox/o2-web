@@ -1,0 +1,25 @@
+.route_condition_warning {
+	color: #ff0000;
+}
+
+.route_condition_good {
+	color: #32cd32;
+}
+
+button .close,
+.x-btn-button .close,
+.x-menu-item-icon.close {
+	background-image: url('%static%/img/lock.png');
+}
+
+button .start,
+.x-btn-button .start,
+.x-menu-item-icon.start {
+	background-image: url('%static%/img/start.png');
+}
+
+button .routelist-calculate,
+.x-btn-button .routelist-calculate,
+.x-menu-item-icon.routelist-calculate {
+	background-image:url('%static%/img/3160/calculator-gray.png')
+}

@@ -1,0 +1,44 @@
+.dn_offer
+{background-image:url('%static%/img/3160/briefcase.png')}
+
+.offers_add
+{background-image:url('%static%/img/add.png')}
+
+.offers_copy
+{background-image:url('%static%/img/1000/page_copy.png')}
+
+.offers_remove
+{background-image:url('%static%/img/action_delete.png')}
+
+.offers_send
+{background-image:url('%static%/img/1000/email_go.png')}
+
+.offers_recyclebin
+{background-image:url('%static%/img/bin.png')}
+
+.offers_reset
+{background-image:url('%static%/img/arrow_undo.png')}
+
+.offers_cancel
+{background-image:url('%static%/img/cancel.png')}
+
+.offers_uncheck
+{background-image:url('%static%/img/unchecked.gif')}
+
+.offers_map
+{background-image:url('%static%/img/map.png')}
+
+.offers_group
+{background-image:url('%static%/img/1000/arrow_in.png')}
+
+.offers_group_off
+{background-image:url('%static%/img/1000/arrow_out.png')}
+
+.is_disabled {
+	color:#bbb;
+}
+
+.offer_important,
+.offer_important * {
+	font-weight: bold;
+}

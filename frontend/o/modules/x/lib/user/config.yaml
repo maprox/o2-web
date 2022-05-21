@@ -1,0 +1,57 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - ext/ux/grid/plugin/editing.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - common/lib/passgen
+  - common/lib/person
+  - c > lib/vtype/login
+  - common/lib/modelslist
+  - common/lib/schedule
+  - x/obj/user
+  - obj/accesslevels
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/view/panel.js
+  - js/view/tabs.js
+  - js/control/tabs.js
+  - js/view/tabs/access.js
+  - js/view/tabs/props.js
+  - js/view/tabs/person.js
+  - js/control/tabs/access.js
+  - js/control/tabs/props.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

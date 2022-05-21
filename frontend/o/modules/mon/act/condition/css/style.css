@@ -1,0 +1,57 @@
+.mon-condition
+{background-image:url('%static%/img/condition.png')}
+
+.row_groupconnected td,
+.row_grouplost td,
+.row_groupwith_errors td,
+.row_groupwithout_errors td
+{
+	color: #33a;
+}
+
+.row_groupconnected .x-grid-checkheader,
+.row_grouplost .x-grid-checkheader,
+.row_groupwith_errors .x-grid-checkheader,
+.row_groupwithout_errors .x-grid-checkheader
+{
+	background: none;
+}
+
+.device_condition_errors_ok
+{
+	background-color: #90ee90 !important;
+}
+
+.device_condition_errors_warn
+{
+	background-color: #ffffe0 !important;
+}
+
+.device_condition_errors_critical
+{
+	background-color: #cd5c5c !important;
+}
+
+.device_condition_connection_ok
+{
+	color: #008000 !important;
+}
+
+.device_condition_connection_warn
+{
+	color: #f4a460 !important;
+}
+
+.device_condition_connection_lost
+{
+	color: #ff0000 !important;
+}
+
+.condition-item-name
+{
+	font-size: 200%;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+	color: #556677;
+}

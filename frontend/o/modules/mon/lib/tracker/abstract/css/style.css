@@ -1,0 +1,4 @@
+.not-really-disabled .x-form-field {
+	filter: none !important;
+	opacity: 1 !important;
+}

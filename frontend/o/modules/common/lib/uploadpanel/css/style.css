@@ -1,0 +1,8 @@
+.pluploadAddCls
+{background-image:url('%static%/img/1000/add.png')}
+.pluploadUploadCls
+{background-image:url('%static%/img/1000/arrow_up.png')}
+.pluploadCancelCls
+{background-image:url('%static%/img/1000/stop.png')}
+.pluploadDeleteCls
+{background-image:url('%static%/img/1000/cross.png')}

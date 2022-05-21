@@ -1,0 +1,36 @@
+/**
+ * Style for template
+ */
+
+.mon-vehicle
+{background-image:url('%static%/img/3160/truck.png')}
+
+.vehicle-thumb img {
+
+}
+
+.vehicle-thumbs {
+
+}
+
+.vehicle-thumb {
+	float: left;
+	position: relative;
+	padding: 5px;
+	vertical-align: middle;
+	display: table-cell;
+	margin: auto;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #efefef;
+	word-break: break-all;
+}
+
+.vehicle-thumb.loading {
+	background: url('%static%/img/loader-lines.gif') no-repeat center;
+}
+
+.vehicle-thumb.x-item-selected {
+	padding: 5px;
+}

@@ -1,0 +1,64 @@
+#
+# YAML
+#
+# Module configuration
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# List of JS files used in module
+# / Relative to root folder of JS files
+#
+include:
+  - ext/ux/form/field/month.js
+  - ext/ux/grid/headertooltip.js
+  - o/ux/grid/plugin/rowexpander.js
+  - ext/panel/table.js
+  - /c/kernel/module.js
+  - /o/utils/convert.js
+
+#
+# List of modules, wich are used in this module
+# / Here are listed the names of modules
+#
+modules:
+  - common/lib/modelslist
+  - mon/obj/fuel_consumption_report
+  - mon/obj/fuel_consumption_report_item
+  - dn/obj/division
+  - dn/obj/worker
+
+#
+# List of JS files, included in this module
+# / Relative to the folder that contains this configuration file
+#
+js:
+  - js/view/itemlist.js
+  - js/view/editorwindow.js
+  - js/view/createwindow.js
+  - js/view/consolidatedwindow.js
+  - js/view/tabs/props.js
+  - js/view/tabs/item.js
+  - js/control/itemlist.js
+#  - js/control/tabs/props.js
+  - js/control/tabs/item.js
+  - js/control/editorwindow.js
+  - js/control/createwindow.js
+  - js/control/consolidatedwindow.js
+
+#
+# List of CSS files, wich are plugged in this module
+# / Relative to the folder that contains this configuration file
+#
+css:
+  - css/style.css
+
+#
+# The path to language files
+# / {language} is replaced by the alias (ru, en, de и т.д.)
+# / Relative to the folder that contains this configuration file
+#
+lang:
+  - lang/{{language}}.js

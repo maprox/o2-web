@@ -1,0 +1,73 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - /o/kernel/manager/packet.js
+  - /o/kernel/ui/toolpanel.js
+  - /ext/ux/ctemplate.js
+  - /ext/ux/grid/column/component.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - mon/obj/device
+  - mon/obj/packet
+  - obj/events
+#  - obj/packets
+  - mon/lib/geozone_panel
+  - mon/lib/map
+  - mon/lib/map/engines/openlayers
+  - mon/lib/packetinfo
+  - ui/groups/devices
+  - ui/groups/zones
+  - obj/ownerinfo
+  - mon/obj/device_command
+  - mon/obj/device_command_template
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/view/baselayer.js
+  - js/view/panel.js
+  - js/view/packetinfo.js
+  - js/view/infopanel.js
+  - js/view/infowindow.js
+  - js/view/waylist.js
+  - js/view/commands.js
+  - js/view/drivers.js
+  - js/control/infopanel.js
+  - js/control/panel.js
+  - js/control/packetinfo.js
+  - js/control/waylist.js
+  - js/control/commands.js
+  - js/control/drivers.js
+  - js/module.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

@@ -1,0 +1,91 @@
+#
+# YAML
+#
+# Файл настроек страницы авторизации
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+  - /c/utils/ie-patches.js
+  - /c/utils/md5.js
+  - /c/utils/base64.js
+  - /c/cfg.js
+  - /m/cfg.js
+  - /o/cfg.js
+  - /c/utils/err.js
+  - /c/utils/utils.js
+  - /o/kernel/object.js
+  - /o/kernel/proxy.js
+  - /o/kernel/proxy/ajax.js
+  - /c/kernel/manager/lang.js
+  - /o/kernel/manager/model.js
+  - /c/kernel/manager/auth.js
+  - /o/kernel/manager/history.js
+  - /o/kernel/manager/settings.js
+  - /c/ui/module.js
+  - /c/ui/panel.js
+  - /o/kernel/ui/panel.js
+  - /o/kernel/ui/tabpanel.js
+  - /o/kernel/ui/window.js
+  - /o/kernel/ui/window/modeleditor.js
+
+  - /ext/ux/patches.js
+  - /ext/grid/panel.js
+  - /ext/grid/column/column.js
+  - /ext/form/fieldset.js
+  - /ext/form/field/checkbox.js
+  - /ext/form/field/combobox.js
+  - /ext/form/basic.js
+  - /ext/data/model.js
+  - /ext/view/abstractview.js
+  - /ext/view/table.js
+#  - /ext/layout/container/boxoverflow/menu.js
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+  - common/obj/settings
+  - ui/desktop/tabbed
+  - act/apanel
+  - common/act/supportbox
+  - common/act/bootmsg
+  - common/act/balance
+  - common/act/logout
+  - common/act/screenresolution
+  - common/lib/message
+#  - mon/act/condition
+#  - mon/act/dashboard
+#  - sdesk/act/issues
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/control/app.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - ../lang/{{language}}/common.js
+  - ../lang/{{language}}/err.js
+  - ../lang/{{language}}/ext.js
+  - lang/{{language}}.js

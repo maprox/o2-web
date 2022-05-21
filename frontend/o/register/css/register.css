@@ -1,0 +1,58 @@
+body {
+	background: url("%static%/img/desktop.png") repeat-x #FFFFFF !important;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+.x-panel-body, .title, .title * {
+	background: none;
+	border: none;
+}
+
+.title {
+	padding: 20px;
+}
+
+.error {
+	padding: 10px 0 10px 10px;
+}
+
+.error div, .error span {
+	color: #FF0000;
+}
+
+.x-form-cb-label-after {
+	margin: 0 15px;
+}
+
+.x-form-cb-wrap {
+	padding-top: 0px;
+}
+
+.x-form-radio {
+	background-image: url("%static%/ext-themes/4.1.1/images/gray/form/checkbox.gif");
+}
+
+.x-panel-header {
+	background-color: #EEEEEE;
+	background-image: -moz-linear-gradient(center top, #FFFFFF, #D5D5D5);
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #D5D5D5);
+}
+
+.x-panel-header-text-default {
+	color: #444444;
+}
+
+.ext-mb-text {
+	color: #444444;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.upload-icon
+{background-image: url('%static%/img/3160/document--plus.png')}
+
+.uploaded input[type=text]
+{background: url('%static%/img/action_check.png') 2px 50% no-repeat;}

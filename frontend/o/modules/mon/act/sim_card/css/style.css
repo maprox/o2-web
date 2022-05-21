@@ -1,0 +1,9 @@
+/**
+ * Style for template
+ */
+
+.mon-sim-card
+{background-image:url('%static%/img/3160/sd-memory-card.png')}
+
+.btn-sms-configure
+{background-image:url('%static%/img/settings.png')}

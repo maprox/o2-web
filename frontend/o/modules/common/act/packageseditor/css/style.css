@@ -1,0 +1,11 @@
+.packageseditor
+{background-image:url('%static%/img/1000/box.png')}
+
+.packageseditor_off
+{background-image:url('%static%/img/bullet_red.png')}
+
+.packageseditor_on
+{background-image:url('%static%/img/bullet_green.png')}
+
+.packageseditor_props
+{background-image:url('%static%/img/1000/wrench.png')}

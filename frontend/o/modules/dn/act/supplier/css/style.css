@@ -1,0 +1,51 @@
+.dn_supplier
+{background-image:url('%static%/img/users_green.png')}
+
+.inactive
+{color: gray}
+
+.btn_dn_supplier_activate
+{background-image:url('%static%/img/bullet_green.png')}
+.btn_dn_supplier_disable
+{background-image:url('%static%/img/bullet_red.png')}
+.btn_dn_supplier_recyclebin
+{background-image:url('%static%/img/3160/bin.png')}
+
+.btn_dn_supplier_trashed
+{background-image:url('%static%/img/3160/eye.png')}
+
+.btn_dn_supplier_restore
+{background-image:url('%static%/img/3160/bin--arrow.png')}
+
+.btn_dn_supplier_upload
+{background-image:url('%static%/img/3160/arrow-090.png')}
+
+.btn_dn_supplier_download
+{background-image:url('%static%/img/3160/arrow-270.png')}
+
+.btn_dn_supplier_select
+{background-image:url('%static%/img/3160/document--plus.png')}
+
+.file_btn .x-form-file-btn {
+	height: 22px;
+	padding: 2px;
+}
+
+.has_docs {
+	color: #080;
+}
+
+.trashed {
+	color: #c00;
+}
+.disabled {
+	color: #ccc;
+}
+
+.cross
+{background-image:url('%static%/img/3160/cross.png')}
+
+.fmt-pdf {background-image:url('%static%/img/reports/fmt-pdf.gif')}
+.fmt-rtf {background-image:url('%static%/img/reports/fmt-rtf.gif')}
+.fmt-xls {background-image:url('%static%/img/reports/fmt-xls.gif')}
+.fmt-csv {background-image:url('%static%/img/reports/fmt-csv.gif')}

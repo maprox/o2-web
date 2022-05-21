@@ -1,0 +1,64 @@
+#
+# YAML
+#
+# Desktop configuration
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# List of JS files used in module
+# / Relative to root folder of JS files
+#
+include:
+
+#
+# List of modules, wich are used in this module
+# / Here are listed the names of modules
+#
+modules:
+  - lib/map
+#
+# List of JS files, included in this module
+# / Relative to the folder that contains this configuration file
+#
+js:
+  - js/model/layer.js
+  - js/view/geocoder.js
+  - js/control/layerlist.js
+  - js/control/images.js
+  - js/control/util.js
+  - js/control/engine.js
+  - js/control/extender.js
+  - js/control/entity/abstract/base.js
+  - js/control/entity/abstract/point.js
+  - js/control/entity/abstract/geometry.js
+  - js/control/entity/dummy.js
+  - js/control/entity/popup.js
+  - js/control/entity/marker.js
+  - js/control/entity/line.js
+  - js/control/entity/polygon.js
+  - js/control/entity/ring.js
+  - js/control/entity/styledpoint.js
+  - js/extensions/simpletooltip.js
+  - js/extensions/layeryandex.js
+  - js/extensions/customanchoredbubble.js
+  - js/extensions/customlayerswitcher.js
+  - js/extensions/layerpanel.js
+  - js/extensions/patches.js
+
+#
+# List of CSS files, wich are plugged in this module
+# / Relative to the folder that contains this configuration file
+#
+css:
+  - css/style.css
+
+#
+# The path to language files
+# / {language} is replaced by the alias (ru, en, de и т.д.)
+# / Relative to the folder that contains this configuration file
+#
+lang:
+  - lang/{{language}}.js

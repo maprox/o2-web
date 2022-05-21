@@ -1,0 +1,11 @@
+.tariffseditor
+{background-image:url('%static%/img/1000/basket.png')}
+
+.tariffseditor_off
+{background-image:url('%static%/img/bullet_red.png')}
+
+.tariffseditor_on
+{background-image:url('%static%/img/bullet_green.png')}
+
+.tariffseditor_props
+{background-image:url('%static%/img/1000/wrench.png')}

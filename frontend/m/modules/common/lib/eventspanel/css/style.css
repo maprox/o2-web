@@ -1,0 +1,40 @@
+.empty {
+	padding: 2em;
+	color: #888;
+}
+
+.event
+{
+	font-size: 16px;
+}
+
+.event .datetime
+{
+	padding-bottom: 10px;
+}
+
+.event .date
+{
+	color: #666;
+}
+
+.x-item-selected .event .date
+{
+	color: #ccc;
+}
+
+.event .time
+{
+	color: #049;
+	font-weight: bold;
+}
+
+.x-item-selected .event .time
+{
+	color: #9cf;
+}
+
+.event .text
+{
+	
+}

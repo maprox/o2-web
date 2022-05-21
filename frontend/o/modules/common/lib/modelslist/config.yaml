@@ -1,0 +1,54 @@
+#
+# YAML
+#
+# Файл настроек
+#
+# @project    Maprox <http://www.maprox.net>
+# @copyright  2011-2012, Maprox LLC
+# ---------------------------------------------------------------------------
+
+#
+# Список используемых JS файлов
+# / Относительно корневой папки с JS скриптами
+#
+include:
+
+#
+# Список модулей, которые используются
+# / Перечисляются имена модулей
+#
+modules:
+
+#
+# Список JS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+js:
+  - js/view/list.js
+  - js/view/remotelist.js
+  - js/view/panel.js
+  - js/view/tabs.js
+  - js/view/tab.js
+  - js/view/editorwindow.js
+  - js/control/list.js
+  - js/control/remotelist.js
+  - js/control/panel.js
+  - js/control/tabs.js
+  - js/control/tab.js
+  - js/control/editorwindow.js
+  - js/model/list-action.js
+
+#
+# Список CSS файлов, подключаемых в данном модуле
+# / Относительно папки в которой находится данный файл конфигурации
+#
+css:
+  - css/style.css
+
+#
+# Путь к языковым файлам.
+# / {0} заменяется на алиас (ru, en, de и т.д.)
+# / Относительно папки в которой находится данный файл конфигурации
+#
+lang:
+  - lang/{{language}}.js

@@ -1,0 +1,45 @@
+.firmseditor
+{background-image:url('%static%/img/company.png')}
+
+.firmseditor_off
+{background-image:url('%static%/img/bullet_red.png')}
+
+.firmseditor_on
+{background-image:url('%static%/img/bullet_green.png')}
+
+.firmseditor_props
+{background-image:url('%static%/img/1000/wrench.png')}
+
+.firmseditor_manager
+{background-image:url('%static%/img/1000/user_suit.png')}
+
+.firmseditor_contacts
+{background-image:url('%static%/img/1000/phone.png')}
+
+.firmseditor_bank
+{background-image:url('%static%/img/1000/building.png')}
+
+.firmseditor_billing
+{background-image:url('%static%/img/1000/money.png')}
+
+.firmseditor_tariffs
+{background-image:url('%static%/img/1000/basket.png')}
+
+.firmseditor_settings
+{background-image:url('%static%/img/1000/cog.png')}
+
+.firmseditor_users
+{background-image:url('%static%/img/1000/user.png')}
+
+.firmseditor_device
+{background-image:url('%static%/img/drive.png')}
+
+.field_hint *
+{
+	color:#999;
+}
+
+.bold .x-form-display-field
+{
+	font-weight:bold;
+}
