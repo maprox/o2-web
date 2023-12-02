@@ -16,7 +16,5 @@ case $SRV_RUN in
     ;;
   JOB )
     php ./jobs/starter.php $JOB_START dummy
-    touch ./logs/empty.log
-    tail -f ./logs/*.log
     ;;
 esac

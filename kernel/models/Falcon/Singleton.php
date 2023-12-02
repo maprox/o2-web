@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Abstract class for an singletone object
+ * Abstract class for a singleton object
  *
  * @project    Maprox <http://www.maprox.net>
- * @copyright  2010-2012, Maprox LLC
+ * @copyright  2010-2023, Maprox LLC
  */
 abstract class Falcon_Singleton
 {
@@ -24,7 +24,7 @@ abstract class Falcon_Singleton
 
     /**
      * Returns an instance of this object
-     * @param $option Опция для конструктора
+     * @param $option bool Опция для конструктора
      * @return static
      */
     final public static function getInstance($option = false)

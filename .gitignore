@@ -69,3 +69,4 @@ etc/test-jslint.config.local.php
 version.properties
 
 .env
+/build.cmd
