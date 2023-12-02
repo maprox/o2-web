@@ -1,0 +1,27 @@
+<VirtualHost *:80>
+    RewriteEngine On
+    DocumentRoot /var/www/site/maprox.net/public
+
+    ServerName maprox.net
+    ServerAlias www.maprox.net
+    ServerAlias maprox.ru
+    ServerAlias www.maprox.ru
+    ServerAlias maprox.com
+    ServerAlias www.maprox.com
+    ServerAlias maprox.org
+    ServerAlias www.maprox.org
+
+    ErrorLog ${APACHE_LOG_DIR}/site_error.log
+    CustomLog ${APACHE_LOG_DIR}/site_access.log combined
+
+    <Directory "/var/www/site/maprox.net/public">
+        AllowOverride All
+        Require all granted
+        Options +Indexes
+    </Directory>
+
+    <IfModule remoteip_module>
+        RemoteIPHeader X-Forwarded-For
+    </IfModule>
+
+</VirtualHost>
