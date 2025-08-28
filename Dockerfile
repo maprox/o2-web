@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
-MAINTAINER Alexander Y Lyapko z@sunsay.ru
+LABEL maintainer="Alexander Y Lyapko z@sunsay.ru"
 
-ENV LANG C.UTF-8
+ENV LANG=C.UTF-8
 RUN locale-gen en_US.UTF-8
 RUN update-locale LANG=en_US.UTF-8
 
@@ -24,6 +24,6 @@ RUN wget https://getcomposer.org/installer && \
     a2enmod rewrite && \
     update-rc.d -f apache2 remove
 
-CMD ./start.sh
+CMD ["./start.sh"]
 
 EXPOSE 8080
