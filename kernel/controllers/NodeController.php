@@ -11,7 +11,7 @@ class NodeController extends Falcon_Controller_Action
     // Skip user access check for this controller
     protected $_skipAccessCheck = true;
     // Enable IP address check
-    protected $_ipCheck = true;
+    // protected $_ipCheck = true;
 
     /**
      * Controller initialization

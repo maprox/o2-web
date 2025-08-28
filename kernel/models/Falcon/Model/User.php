@@ -400,6 +400,8 @@ class Falcon_Model_User extends Falcon_Model_Abstract
      */
     public function getModules($location = false)
     {
+        Falcon_Cacher::getInstance()->clean();
+
         $logger = Falcon_Logger::getInstance();
         $firm = new Falcon_Model_Firm($this->getFirmId());
         $modules = $firm->getModules();

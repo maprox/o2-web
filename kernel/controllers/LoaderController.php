@@ -333,7 +333,11 @@ class LoaderController extends Falcon_Controller_Action
                     $dataLoaded = true;
                 } catch (Exception $e) {
                     // silent exception
-                    //$logger->debug($e);
+                    $logger->log('loader-controller', [
+                      "Action $actionClass has an error",
+                      $e->getMessage(),
+                      $e->getTrace()
+                  ], 'ERROR');
                 }
             }
             if (!$dataLoaded) {

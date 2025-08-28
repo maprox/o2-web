@@ -31,10 +31,17 @@
 				. '/css/themes/'. $theme . '.css?' . $obsV)
 		;
 	} else {
-		$this->headLink()
-			->prependStylesheet($this->static
-				. '/ext-themes/' . $extV . '/' . $theme . '.css?' . $obsV)
-		;
+    $themeName = 'maprox-theme-' . $theme;
+    $this->headLink()
+      ->prependStylesheet($this->static . '/ext-themes/' . $extV
+        . '/' . $themeName . '/resources'
+        . '/' . $themeName . '-all.css?' . $obsV)
+    ;
+    $this->headScript()
+      ->prependFile($this->static . '/ext-themes/' . $extV
+        . '/' . $themeName
+        . '/' . $themeName . '.js?' . $obsV)
+    ;
 	}
 	;
 	$this->headScript()

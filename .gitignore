@@ -19,6 +19,7 @@ etc/migrate/current.sql
 etc/migrate/current.php
 
 kernel/config.local.*.php
+kernel/config.local.php
 kernel/config.test.php
 kernel/version.txt
 kernel/wurfl-config.local.php
@@ -70,3 +71,5 @@ version.properties
 
 .env
 /build.cmd
+
+.history

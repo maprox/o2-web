@@ -5,7 +5,7 @@
  * File to which all requests are redirected.
  * Loads the core of the site and starts the application
  *
- * 2009-2013, Maprox LLC
+ * 2009-2025, Maprox LLC
  */
 
 //require 'index.w.php';
@@ -33,7 +33,7 @@ require '../vendor/autoload.php';
 
 // Prepare libs array
 $libs = [
-    '../vendor/zendframework/zendframework1/library',
+    $config['path']['root'] . 'vendor/zendframework/zendframework1/library',
 ];
 foreach ($config['libs'] as $lib => $path)
 {

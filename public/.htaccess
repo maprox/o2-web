@@ -1,6 +1,8 @@
 #Options +FollowSymlinks
 #Options -Indexes
 
+DirectoryIndex index.php
+
 # --------------------------------------------------
 # Cache-Control
 #
