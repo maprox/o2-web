@@ -48,17 +48,28 @@ class Falcon_Mapper_Session extends Falcon_Mapper_Common
      */
     public function read($id)
     {
-        $record = $this->loadRecord($id);
-        if (!$record) {
+        try {
+            $record = $this->loadRecord($id);
+            if (!$record) {
+                return '';
+            }
+
+            if ($record->get('modified') + $record->get('lifetime') < time()) {
+                $this->destroy($id);
+                return '';
+            }
+
+            return $record->get('data');
+        } catch (Exception $e) {
+            // Log database errors but don't break session functionality
+            $logger = Falcon_Logger::getInstance();
+            $logger->log('error', [
+                'message' => 'Session read error: ' . $e->getMessage(),
+                'session_id' => $id,
+                'trace' => $e->getTraceAsString()
+            ]);
             return '';
         }
-
-        if ($record->get('modified') + $record->get('lifetime') < time()) {
-            $this->destroy($id);
-            return '';
-        }
-
-        return $record->get('data');
     }
 
     /**

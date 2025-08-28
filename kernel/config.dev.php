@@ -91,6 +91,17 @@ $config = [
             'password' => getenv('DB_PASSWORD'),
             // database profiler
             'profiler' => false,
+            // connection timeout settings
+            'options' => [
+                PDO::ATTR_TIMEOUT => 10,
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            ],
+            // PostgreSQL specific connection timeout
+            'driver_options' => [
+                'connect_timeout' => 10,
+                'statement_timeout' => 30000, // 30 seconds in milliseconds
+            ]
         ],
     ],
     // environment
@@ -340,7 +351,7 @@ $config = [
         'watchLogin' => true,
     ],
     // Debug flag
-    'debug' => true,
+    'debug' => false,
     // Version info
     'version' => [
         'o' => [

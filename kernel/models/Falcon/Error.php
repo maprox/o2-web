@@ -28,7 +28,14 @@ class Falcon_Error
             if (!empty($config) && $config->debug) {
                 Zend_Debug::dump($message . "\n" . $trace);
             } else {
-                include_once('index.w.php');
+                // Ensure we show the maintenance page safely
+                $maintenancePage = dirname(__DIR__, 2) . '/public/index.w.php';
+                if (file_exists($maintenancePage)) {
+                    include_once($maintenancePage);
+                } else {
+                    // Fallback message if maintenance page is missing
+                    echo '<!DOCTYPE html><html><head><title>Service Temporarily Unavailable</title></head><body><h1>Service Temporarily Unavailable</h1><p>We apologize for the inconvenience. Please try again later.</p></body></html>';
+                }
             }
         } else {
             $message = new Falcon_Message();
