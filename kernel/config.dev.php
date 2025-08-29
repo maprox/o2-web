@@ -85,6 +85,8 @@ $config = [
             'adapterNamespace' => 'Falcon_Db_Adapter',
             // database server
             'host' => getenv('DB_HOST') ?: 'localhost',
+            // database port
+            'port' => getenv('DB_PORT') ?: 5432,
             // database name
             'dbname' => getenv('DB_NAME') ?: 'observer',
             'username' => getenv('DB_USER'),

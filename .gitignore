@@ -19,6 +19,7 @@ etc/migrate/current.sql
 etc/migrate/current.php
 
 kernel/config.local.*.php
+!kernel/config.local.example.php
 kernel/config.local.php
 kernel/config.test.php
 kernel/version.txt
