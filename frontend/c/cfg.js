@@ -268,7 +268,7 @@ Ext.define('C.cfg', {
 		},
 		osm: {
 			tileUrl: location.protocol + "//osm.maprox.net/${z}/${x}/${y}.png",
-			enableTileUrl: (location.protocol == 'https:')
+			enableTileUrl: false // TODO временно отключено
 		},
 		google: {
 			url: location.protocol +
