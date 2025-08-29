@@ -4,7 +4,7 @@
  * Logger
  *
  * @project    Maprox <http://www.maprox.net>
- * @copyright  2010-2023, Maprox LLC
+ * @copyright  2010-2012, Maprox LLC
  */
 class Falcon_Logger extends Falcon_Singleton
 {
@@ -109,13 +109,30 @@ class Falcon_Logger extends Falcon_Singleton
      */
     protected function createLogger($flag)
     {
+        if (
+            empty($this->root)
+            || empty($this->format)
+            || empty($this->timestampFormat)
+            || empty($this->maxDepth)
+        ) {
+            $config = Zend_Registry::get('config');
+            $this->root = $config->path->root . 'logs' . DIRECTORY_SEPARATOR;
+            $this->format = $config->logger->format;
+            $this->timestampFormat = $config->logger->timestampFormat;
+            $this->maxDepth = $config->logger->maxDepth;
+        }
+
+        $path = $this->root . $flag . '_' . date('Y-m-d') . '.log';
+
         $logger = new Zend_Log();
-        $writer = new Zend_Log_Writer_Stream('php://output');
+        $writer = new Zend_Log_Writer_Stream($path);
         $formatter = new Zend_Log_Formatter_Simple($this->format);
 
         $writer->setFormatter($formatter);
         $logger->addWriter($writer);
         $logger->setTimestampFormat($this->timestampFormat);
+
+        chmod($path, 0777);
 
         $this->loggers[$flag] = $logger;
     }
