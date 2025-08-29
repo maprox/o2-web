@@ -14,8 +14,8 @@ COPY . /opt/maprox/web.observer/
 
 WORKDIR /opt/maprox/web.observer/
 
-# Remove config.local.* files to prevent sensitive data in production image
-RUN rm -f kernel/config.local.*.php
+# Remove sensitive config.local files but keep example file
+RUN rm -f kernel/config.local.php kernel/config.local.dev.php kernel/config.local.prod.php
 
 # Set permissions for logs directory
 RUN chmod -R 777 logs/
