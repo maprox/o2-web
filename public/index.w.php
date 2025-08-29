@@ -48,7 +48,7 @@ function translate($text)
 /**
 	Url for static content
  */
-$staticurl = 'http://static.maprox.net/';
+$staticurl = 'https://static.maprox.net/';
 
 ?>
 

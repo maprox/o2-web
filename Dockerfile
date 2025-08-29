@@ -17,6 +17,9 @@ WORKDIR /opt/maprox/web.observer/
 # Remove config.local.* files to prevent sensitive data in production image
 RUN rm -f kernel/config.local.*.php
 
+# Set permissions for logs directory
+RUN chmod -R 777 logs/
+
 RUN wget https://getcomposer.org/installer && \
     php installer && \
     php composer.phar install && \
