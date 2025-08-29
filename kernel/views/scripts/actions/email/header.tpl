@@ -7,7 +7,7 @@
  */
 
 	// init variables
-	$static = getProtocol(true) . '://' . $this->config->resources->static;
+	$static = $this->config->resources->static;
 	$zt = $this->zt;
 	$vars = (object)$this->variables;
 	$prefix = $vars->notifyEmailSubjectPrefix;

@@ -44,4 +44,10 @@ $local_config = [
         'host' => 'redis-host',
         'port' => 6379,
     ],
+    
+    // Resources URLs - full URLs
+    'resources' => [
+        'static' => 'https://your-static-domain', // or use URL_STATIC env var
+        'node' => 'https://your-node-host',
+    ],
 ];

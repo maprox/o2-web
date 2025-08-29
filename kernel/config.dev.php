@@ -460,9 +460,8 @@ $config = [
         'support' => true,
     ],
     'resources' => [
-        'static' => getenv('HOST_STATIC') ?: 'static.maprox.net',
-        'node' => getenv('NODE_HOST'),
-        'node_ssl' => getenv('NODE_HOST_SSL'),
+        'static' => getenv('URL_STATIC') ?: 'https://static.maprox.net',
+        'node' => getenv('URL_NODE') ?: 'https://observer.maprox.net/node-websocket',
     ],
     // frontend configuration
     'frontend' => [

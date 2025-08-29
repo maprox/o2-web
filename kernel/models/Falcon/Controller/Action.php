@@ -79,7 +79,7 @@ class Falcon_Controller_Action extends Falcon_Controller_Action_Abstract
         }
 
         $static = $config->resources->static;
-        $this->view->static = getProtocol() . '://' . $static;
+        $this->view->static = $static;
 
         if ($this->_disableLayout) {
             $this->_helper->layout()->disableLayout();

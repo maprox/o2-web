@@ -58,19 +58,8 @@ class Falcon_Compiler_Abstract
         $this->config['frontendConfig'] =
             $this->loadConfig($this->config['path']);
 
-        $static = Zend_Registry::get('config')->resources->static;
-        $this->staticPath = getProtocol() . '://' . $static;
-
-        $node = Zend_Registry::get('config')->resources->node;
-        $nodeSsl = Zend_Registry::get('config')->resources->node_ssl;
-
-        if (getProtocol() == 'http') {
-            $this->nodePath = getProtocol() . '://' . $node;
-        }
-
-        if (getProtocol() == 'https') {
-            $this->nodePath = getProtocol() . '://' . $nodeSsl;
-        }
+        $this->staticPath = Zend_Registry::get('config')->resources->static;
+        $this->nodePath = Zend_Registry::get('config')->resources->node;
 
         if (isset($this->config['frontendConfig']->path->modules)) {
             $this->modulePath = $this->config['frontendConfig']->path->modules->toArray();

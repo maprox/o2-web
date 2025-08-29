@@ -13,8 +13,7 @@ class AuthController extends Zend_Controller_Action
      */
     public function init()
     {
-        $static = Zend_Registry::get('config')->resources->static;
-        $this->view->static = getProtocol() . '://' . $static;
+        $this->view->static = Zend_Registry::get('config')->resources->static;
     }
 
     /**

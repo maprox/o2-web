@@ -24,8 +24,8 @@ class Falcon_Compiler_Css extends Falcon_Compiler_Abstract
     public function __construct($config = null)
     {
         parent::__construct($config);
-        $static = Zend_Registry::get('config')->resources->static;
-        $this->staticPath = getProtocol() . '://' . $static;
+
+        $this->staticPath = Zend_Registry::get('config')->resources->static;
     }
 
     /**
