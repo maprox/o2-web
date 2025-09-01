@@ -5,8 +5,6 @@ $_SERVER['SERVER_PORT'] = 80;
 
 // Load the config
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'kernel/config.dev.php';
-// Rewrite config db connection with testing one
-require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'kernel/config.local.php';
 // Load the composer autoloader
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
