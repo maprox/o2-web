@@ -13,6 +13,9 @@ case $SRV_RUN in
     apache2ctl -D FOREGROUND
     ;;
   JOB )
-    php ./jobs/starter.php $JOB_START dummy
+    # Run job directly in foreground instead of background processes
+    # JOB_START defines the job type (e.g., mon_device)
+    # JOB_KEY defines the specific key to listen to (e.g., packet.receive, command.create, etc.)
+    php ./jobs/job-starter.php $JOB_START $JOB_KEY
     ;;
 esac

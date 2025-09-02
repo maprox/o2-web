@@ -107,7 +107,7 @@ $config = [
         ],
     ],
     // environment
-    'environment' => 'production',
+    'environment' => getenv('ENVIRONMENT') ?: 'production',
     // session
     'session' => [
         'lifeTime' => 7 * 24 * 60 * 60, // a week
@@ -195,9 +195,9 @@ $config = [
     'amqp' => [
         'host' => getenv('AMQP_HOST') ?: 'localhost',
         'port' => getenv('AMQP_PORT') ?: 5672,
-        'login' => getenv('AMQP_USER') ?: 'guest',
+        'login' => getenv('AMQP_USERNAME') ?: 'guest',
         'password' => getenv('AMQP_PASSWORD') ?: 'guest',
-        'namespace' => 'production',
+        'namespace' => getenv('ENVIRONMENT') ?: 'production',
     ],
     // js/css compiler settings
     'compiler' => [

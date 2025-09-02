@@ -57,7 +57,7 @@ class ImagesController extends Falcon_Controller_Action
      */
     protected function getImages($config, $server)
     {
-        $url = getProtocol() . '://' . $server . $config->path;
+        $url = $server . $config->path;
 
         $headers = get_headers($url, true);
         if (!strpos($headers[0], '200 OK')) {
