@@ -1,0 +1,296 @@
+---
+description: "Maprox Observer - система мониторинга транспорта на PHP (Zend Framework 1.x) + ExtJS. Включает архитектуру, систему прав, модули, API и особенности Windows окружения."
+globs: 
+  - "**/*.php"
+  - "**/*.js" 
+  - "**/*.yaml"
+  - "**/*.yml"
+  - "**/*.tpl"
+  - "**/*.css"
+  - "**/*.sql"
+  - "**/composer.json"
+  - "**/config.*"
+  - "**/boot.php"
+  - "jobs/**/*"
+  - "kernel/**/*"
+  - "frontend/**/*"
+alwaysApply: true
+tags:
+  - "php"
+  - "zend-framework"
+  - "extjs"
+  - "postgresql"
+  - "rabbitmq"
+  - "maprox"
+  - "monitoring"
+  - "transport"
+  - "falcon-framework"
+---
+
+# Maprox Observer Web Application - Cursor AI Rules
+
+## Общее описание проекта
+
+**Maprox Observer** - это комплексная система мониторинга транспорта и управления активами, разработанная на PHP с использованием Zend Framework 1.x и ExtJS 4.x для фронтенда. Система предоставляет функции отслеживания местоположения устройств, анализа данных, биллинга и управления пользователями.
+
+## Технический стек
+
+- **Backend**: PHP 7.x+ (Zend Framework 1.x)
+- **Frontend**: ExtJS 4.x (JavaScript)
+- **Database**: PostgreSQL 10+
+- **Message Queue**: RabbitMQ (AMQP)
+- **Real-time**: Node.js + Socket.IO
+- **Caching**: Redis (через Predis)
+- **Dependencies**: Composer
+- **Environment**: Windows 10 (CMD терминал)
+
+## Архитектура и структура проекта
+
+### Основные директории:
+
+```
+o2-web/
+├── kernel/           # Backend PHP код (MVC)
+│   ├── controllers/  # REST контроллеры
+│   ├── models/       # Модели данных
+│   │   └── Falcon/   # Собственный фреймворк
+│   ├── views/        # Шаблоны (.tpl файлы)
+│   └── boot.php      # Точка входа системы
+├── frontend/         # Frontend JavaScript код
+│   ├── c/           # Common модули
+│   ├── o/           # Observer модули (основные)
+│   ├── m/           # Mobile модули
+│   └── config.yaml  # Конфигурация фронтенда
+├── public/          # Веб-доступная директория
+├── jobs/            # Фоновые задачи
+├── cache/           # Кеш файлы
+└── vendor/          # Composer зависимости
+```
+
+## Falcon Framework
+
+Собственный фреймворк поверх Zend Framework с основными классами:
+
+- `Falcon_Model_Abstract` - базовая модель
+- `Falcon_Record_Abstract` - запись таблицы
+- `Falcon_Mapper_*` - работа с данными
+- `Falcon_Controller_*` - контроллеры
+- `Falcon_Message` - стандартный ответ API
+
+### Паттерны проектирования:
+- **Singleton**: `Falcon_Model_User::getInstance()`
+- **Mapper**: Отделение логики работы с БД
+- **Factory**: `Falcon_Manager_Notice_Factory`
+
+## Система прав доступа
+
+### Цепочка прав:
+```
+Пользователь → Уровень прав → Права → Модули → Тарифы → Фирма
+     ↓              ↓           ↓        ↓         ↓
+  x_user    x_right_level   x_right  x_module  x_tariff  x_firm
+```
+
+### Основные таблицы:
+- **x_right** - права доступа с битовыми масками (READ=1, WRITE=2, CREATE=4, GRANT=8)
+- **x_module** - модули системы с location (1=index, 2=admin)
+- **x_right_level** - уровни прав (роли)
+- Связующие таблицы для связи пользователей, прав и модулей
+
+### Проверка прав:
+```php
+$user = Falcon_Model_User::getInstance();
+if ($user->hasRight($rightId)) {
+    // доступ разрешен
+}
+```
+
+## Frontend архитектура (ExtJS)
+
+### Модульная система:
+- Конфигурация в `frontend/config.yaml` с алиасами модулей
+- Автозагрузка модулей на основе прав пользователя
+- Система proxy для работы с REST API
+
+### Основные модули:
+- `act_map` - карта мониторинга
+- `act_devices` - управление устройствами
+- `act_billing` - биллинг
+- `act_reports` - отчеты
+- `act_users` - управление пользователями
+
+### Структура модуля:
+```
+frontend/o/modules/mon/act/device/
+├── config.yaml          # Конфигурация модуля
+├── js/
+│   ├── module.js        # Основной класс модуля
+│   └── ...
+├── css/
+└── lang/
+    ├── ru.js
+    └── en.js
+```
+
+## База данных (PostgreSQL)
+
+### Основные таблицы:
+- `x_user` - пользователи
+- `x_firm` - организации
+- `x_person` - персональные данные
+- `mon_device` - устройства мониторинга
+- `mon_vehicle` - транспортные средства
+
+### Функции БД:
+- `web_user_exists2()` - проверка существования пользователя
+- Хранимые процедуры для бизнес-логики
+
+## REST API
+
+### Роутинг:
+- Автоматическая генерация REST роутов для основных сущностей
+- Поддержка стандартных HTTP методов (GET, POST, PUT, DELETE)
+- Авторизация через API ключи или сессии
+
+### Основные эндпоинты:
+```
+/x_user          - пользователи
+/mon_device      - устройства
+/mon_vehicle     - транспорт  
+/x_firm          - организации
+/auth/login      - аутентификация
+```
+
+## Система джобов (Background Jobs)
+
+### Структура:
+- `jobs/abstract.php` - базовый класс
+- `jobs/starter.php` - запуск джобов
+- `jobs/*/` - конкретные джобы по категориям
+
+### Типы джобов:
+- `mon/device.php` - обработка данных устройств
+- `mon/track.php` - обработка треков
+- `x/notification.php` - уведомления
+
+## Environment переменные
+
+```bash
+# Database
+DB_HOST, DB_USER, DB_PASSWORD, DB_NAME
+
+# Message Queue
+AMQP_HOST, AMQP_USER, AMQP_PASSWORD
+
+# Node.js
+NODE_HOST, NODE_HOST_SSL
+
+# Maps
+MAPS_KEYS_YANDEX_*
+
+# Security
+KEY_SALT
+
+# Services
+JASPER_URL, SMSPILOT_KEY, etc.
+```
+
+## Конфигурация
+
+### Основные конфиги:
+- `kernel/config.dev.php` - основная конфигурация
+- `kernel/config.local.php` - локальные настройки
+- `frontend/config.yaml` - настройки фронтенда
+
+## Особенности Windows окружения
+
+### Терминал CMD:
+- Использовать Windows команды: `dir` вместо `ls`, `type` вместо `cat`
+- НЕ использовать многострочные git commit сообщения
+- Права доступа устанавливаются в Dockerfile через `chmod`
+
+### Полезные команды:
+```cmd
+# Запуск конкретного джоба
+php jobs/starter.php mon_device
+
+# Запуск всех джобов
+php jobs/job-server.php
+
+# Очистка кеша
+del /q cache\compiled\*
+del /q cache\zend\*
+```
+
+## Соглашения по коду
+
+### PHP:
+- Классы в стиле `Falcon_*`
+- Таблицы с префиксами (`x_`, `mon_`, `dn_`)
+- PSR-0 автозагрузка через Zend
+
+### JavaScript (ExtJS):
+- Namespace `O.*` для основных модулей
+- Конфигурация модулей в YAML
+- Система proxy для работы с данными
+
+### Именование:
+- Контроллеры: `*Controller.php`
+- Модели: `Falcon_Model_*`
+- Записи: `Falcon_Record_*`
+- Мапперы: `Falcon_Mapper_*`
+
+## Отладка и логирование
+
+### Логирование:
+- `Falcon_Logger::getInstance()` - основной логгер
+- `logs/` директория с файлами логов
+- Категории: auth, job, error
+
+### Отладка:
+- `$config['debug']` - режим отладки
+- Профайлер БД встроен в Zend
+- Логирование ошибок и событий
+
+## Типичные задачи
+
+### Создание нового модуля:
+1. Создать право в `x_right`
+2. Создать модуль в `x_module`
+3. Привязать к тарифу в `x_tariff_module_link`
+4. Назначить право пользователю
+5. Добавить алиас в `frontend/config.yaml`
+6. Создать структуру модуля
+7. Очистить кеш
+
+### Проблемы с правами:
+- Проверить цепочку: пользователь → права → модули → тарифы
+- Убедиться в правильном `location` модуля (1=index, 2=admin)
+- Проверить наличие proxy в модуле
+
+## Развертывание
+
+### Требования:
+- PHP 7.x+
+- PostgreSQL 10+
+- RabbitMQ
+- Redis
+- Node.js
+- Composer
+
+### Установка:
+1. `composer install`
+2. Настройка БД и миграции
+3. Конфигурация environment переменных
+4. Запуск джобов: `php jobs/job-server.php`
+
+## Важные замечания для AI
+
+1. **Всегда учитывать Windows окружение** - использовать соответствующие команды
+2. **Система прав критична** - любые изменения модулей требуют проверки прав доступа
+3. **Модульная архитектура** - новый функционал добавлять через модули
+4. **Кеширование** - после изменений очищать кеш
+5. **Безопасность** - все API операции проходят через систему прав
+6. **Совместимость** - поддерживать совместимость с ExtJS 4.x и Zend Framework 1.x
+
+Этот проект использует устаревшие технологии (Zend Framework 1.x, ExtJS 4.x), но они критичны для работы системы и не должны обновляться без серьезного анализа совместимости.

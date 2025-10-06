@@ -35,7 +35,7 @@ class Falcon_Table_Mon_Device extends Falcon_Table_Common
         $sql = $db->select()
             ->from('mon_packet', [
                 'packetsCount' => 'count(*)',
-                'mileage' => 'max(odometer) - min(odometer)'
+                'mileage' => '(max(odometer) - min(odometer))'
             ])
             ->where('id_device = ?', $id)
             ->where('time >= current_date')
