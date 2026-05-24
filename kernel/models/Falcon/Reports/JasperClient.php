@@ -50,6 +50,11 @@ class Falcon_Reports_JasperClient
      */
     public function requestReport($request)
     {
+        $transport = isset($this->config['transport']) ? $this->config['transport'] : 'soap';
+        if ($transport === 'rest') {
+            return $this->requestReportRest($request);
+        }
+
         $this->request = $request;
         // store path to report files
         $report_hash = md5($request->report . json_encode($request->params));
@@ -118,6 +123,115 @@ class Falcon_Reports_JasperClient
             }
         }
         return $result;
+    }
+
+    /**
+     * Report request from REST report service.
+     * Returns same array shape as SOAP flow: contentType/content/body.
+     */
+    private function requestReportRest($request)
+    {
+        if (empty($this->config['api_url'])) {
+            throw new Exception('Jasper REST transport requires config jasper.api_url');
+        }
+
+        $params = $this->normalizeReportParams(isset($request->params) ? $request->params : []);
+        $params['locale'] = getenv('JASPER_REPORT_LOCALE') ?: 'ru';
+
+        $payload = [
+            'report' => $request->report,
+            'format' => isset($request->format) ? $request->format : 'PDF',
+            'params' => $params,
+            'strict' => !empty($this->config['strict_params']),
+        ];
+
+        if (!empty($this->config['data_source_type'])) {
+            $payload['dataSourceType'] = $this->config['data_source_type'];
+        }
+
+        $ch = curl_init(rtrim($this->config['api_url'], '/') . '/api/reports/render');
+        if ($ch === false) {
+            throw new Exception('Unable to initialize curl for report REST request');
+        }
+
+        $auth = (isset($this->config['username']) ? $this->config['username'] : '')
+            . ':' . (isset($this->config['password']) ? $this->config['password'] : '');
+        curl_setopt_array($ch, [
+            CURLOPT_POST => true,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_HTTPHEADER => [
+                'Content-Type: application/json',
+                'Authorization: Basic ' . base64_encode($auth),
+            ],
+            CURLOPT_POSTFIELDS => json_encode($payload),
+            CURLOPT_CONNECTTIMEOUT => 10,
+            CURLOPT_TIMEOUT => 120,
+        ]);
+
+        $raw = curl_exec($ch);
+        if ($raw === false) {
+            $err = curl_error($ch);
+            curl_close($ch);
+            throw new Exception('REST report request failed: ' . $err);
+        }
+        $status = (int)curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
+        curl_close($ch);
+
+        $decoded = json_decode($raw, true);
+        if ($status >= 400) {
+            $message = is_array($decoded) && isset($decoded['error']) ? $decoded['error'] : $raw;
+            throw new Exception('REST report error: HTTP ' . $status . ' - ' . $message);
+        }
+        if (!is_array($decoded)) {
+            throw new Exception('REST report error: invalid JSON response');
+        }
+
+        $content = isset($decoded['contentBase64']) ? base64_decode($decoded['contentBase64']) : '';
+        $body = isset($decoded['bodyBase64']) ? base64_decode($decoded['bodyBase64']) : $content;
+
+        return [
+            'contentType' => isset($decoded['contentType']) ? $decoded['contentType'] : 'application/octet-stream',
+            'contentId' => 'report',
+            'content' => $content,
+            'body' => $body,
+        ];
+    }
+
+    /**
+     * Same shape as SOAP parameter encoding: objects -> name_prop, lists -> "1;2;".
+     */
+    private function normalizeReportParams($params)
+    {
+        $out = [];
+        foreach ((array)$params as $name => $value) {
+            if (is_object($value)) {
+                foreach (get_object_vars($value) as $prop => $val) {
+                    $out[$name . '_' . $prop] = $val;
+                }
+            } elseif (is_array($value) && $this->isAssocArray($value)) {
+                foreach ($value as $prop => $val) {
+                    $out[$name . '_' . $prop] = $val;
+                }
+            } elseif (is_array($value)) {
+                $out[$name] = implode(';', $value) . ';';
+            } else {
+                $out[$name] = $value;
+            }
+        }
+        return $out;
+    }
+
+    private function isAssocArray($value)
+    {
+        if (!is_array($value)) {
+            return false;
+        }
+        foreach (array_keys($value) as $key) {
+            if (!is_int($key)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**

@@ -206,8 +206,12 @@ $config = [
     ],
     // jasper reports server configuration
     'jasper' => [
+        // Transport: soap (legacy JasperServer) or rest (o2-jasperreports server)
+        'transport' => getenv('JASPER_TRANSPORT') ?: 'soap',
         // Url for SOAP requests
         'url' => getenv('JASPER_URL') ?: 'http://localhost:8080/jasperserver/services/repository',
+        // Base URL for REST report server (used when transport=rest)
+        'api_url' => getenv('JASPER_API_URL') ?: 'http://localhost:8088',
         // requisites
         'username' => getenv('JASPER_USERNAME') ?: 'observer',
         'password' => getenv('JASPER_PASSWORD') ?: 'observer',
